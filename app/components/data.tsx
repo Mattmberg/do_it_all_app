@@ -64,3 +64,63 @@ export const myNavCards = [
 
     },
   ]
+
+export const myGamingAdventures = [
+  {
+      id: 1,
+      title: "Pvp Base",
+      description: "My first major iteration of my base on our private server.",
+      image: "./assets/pvp_base.png",
+    },
+    {
+      id: 2,
+      title: "Copper Deposit",
+      description: "What a copper deposit looks like!",
+      image: "./assets/copper_deposit.jpg",
+    },
+    {
+      id: 3,
+      title: "Tin Deposit",
+      description: "What a tin deposit looks like!",
+      image: "./assets/tin_deposit.jpg",
+    },
+    {
+      id: 4,
+      title: "Ruins",
+      description: "A run-down ruin in the Black Forest!",
+      image: "./assets/black_forest_ruins.jpg",
+    },
+    {
+      id: 5,
+      title: "Dungeon",
+      description: "An underground dungeon in the Black Forest!",
+      image: "./assets/black_forest_dungeon_underground.jpg", 
+    },
+    {
+      id: 6,
+      title: "Monolith",
+      description: "A monolith in the Plains!",
+      image: "./assets/plains_monolith.jpg",
+    },
+  ]
+
+  export const myAdventures = [
+    {
+        id: 1,
+        title: "Three Bunnies",
+        description: "The three bunnies I see wandering around every morning.",
+        image: "./assets/three_bunnies.jpeg",
+      },
+      {
+        id: 2,
+        title: "Computer Parts",
+        description: "What my first self built computer looked like before we finished.",
+        image: "./assets/computer_before.jpeg",
+      },
+      {
+        id: 3,
+        title: "Finished First Build",
+        description: "What my first self built computer looked like when we finished.",
+        image: "./assets/computer_after.jpeg",
+      },
+]
