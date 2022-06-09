@@ -24,10 +24,10 @@ export const CardList = ({ id, title, description, image, color}: Card) => {
             </div>
             <div className="cardstatwrapper">
                 <div className="cardstats">
-                    <a className="linktext" href="#">Website</a>
+                    <a className="linktext" href="https://www.linkedin.com/in/matthew-bergeron-jr-cs/">LinkedIn</a>
                 </div>
                 <div className="cardstats">
-                    <a className="linktext" href="#">Github</a>
+                    <a className="linktext" href="https://github.com/Mattmberg">Github</a>
                 </div>
             </div>
         </div>

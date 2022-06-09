@@ -10,8 +10,10 @@
     grid-auto-rows: auto;
     display: grid;
     grid-gap: 70px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .cardwrapper {
