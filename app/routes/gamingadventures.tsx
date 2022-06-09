@@ -3,7 +3,7 @@ import type {
     MetaFunction,
   } from "@remix-run/node";
   import { Link } from "@remix-run/react";
-  import stylesUrl from "~/styles/index.css";
+  import stylesUrl from "~/styles/gamingadventures.css";
   import { myGamingAdventures } from "~/components/data";
   import { CardList } from "~/components/adventurecard";
   
