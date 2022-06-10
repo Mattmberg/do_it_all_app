@@ -48,6 +48,7 @@
 
 .cardtextwrapper {
     grid-area: text;
+    background: #2e8bc0;
     margin: 25px;
 }
 
@@ -79,7 +80,6 @@
 }
 
 .cardtextbody {
-    color: grey;
     font-size: 15px;
     font-weight: 300;
 }
@@ -91,7 +91,7 @@
     grid-template-rows: 1fr;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: #5930e5;
+    background: #145DA0;
 }
 
 .cardstats {

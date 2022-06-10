@@ -5,7 +5,6 @@ import stylesUrl from "~/styles/index.css";
 import { myNavCards } from "~/components/data";
 import { NavCard } from "~/types";
 import { NavCardList } from "~/components/navcard";
-import { RiCompass3Fill, RiCopperDiamondFill, RiGlobeLine, RiHazeLine, RiTreasureMapLine, RiSpaceShipLine, RiStore3Fill, RiRestaurant2Fill, RiShieldUserLine, } from "react-icons/ri";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl, }];

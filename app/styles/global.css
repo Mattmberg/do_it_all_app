@@ -1,8 +1,8 @@
 :root {
   --color-foreground: hsl(0, 0%, 7%);
   --color-background: #0C2D48;
-  --color-links: hsl(213, 100%, 52%);
-  --color-links-hover: hsl(213, 100%, 43%);
+  --color-links: hsl(213, 88%, 67%);
+  --color-links-hover: hsl(213, 100%, 50%);
   --color-border: hsl(0, 0%, 82%);
   --font-body: "Segoe UI", Helvetica Neue, Helvetica, Roboto,
     Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
@@ -48,6 +48,10 @@ a {
 a:hover {
   color: var(--color-links-hover);
   text-decoration: underline;
+}
+
+a:visited {
+  color:hsl(0, 0%, 7%);
 }
 
 hr {

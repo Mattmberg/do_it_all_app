@@ -9,24 +9,24 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     display: grid;
-    grid-gap: 70px;
+    grid-gap: 20px;
     margin-left: 300px;
     margin-right: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .cardwrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 210px 120px 60px;
-    grid-template-areas: "image" "text" "stats";
+    grid-template-rows: 200px 60px;
+    grid-template-areas: "text" "stats";
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 .cardimage {
