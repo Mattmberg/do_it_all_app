@@ -14,7 +14,7 @@ export default function Index() {
         <div className="header">
         </div>
         <div className="content">
-          <h1>W.I.P.</h1>
+          <h1>Budget Tracking</h1>
         </div>
         <div className="footer">
         </div>

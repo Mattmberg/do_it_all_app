@@ -14,4 +14,12 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     background: #2e8bc0;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    text-decoration: underline;
 }
