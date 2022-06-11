@@ -1,0 +1,8 @@
+.content {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 30px;
+    height: auto;
+    width: auto;
+    background: #2e8bc0;
+}
