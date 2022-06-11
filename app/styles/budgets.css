@@ -1,8 +1,17 @@
+.container {
+    height: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    background-color: #0C2D48;
+}
+
 .content {
     box-sizing: border-box;
     text-align: center;
     padding: 30px;
     height: auto;
     width: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
     background: #2e8bc0;
 }
