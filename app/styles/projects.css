@@ -16,6 +16,7 @@
     margin-right: 300px;
     margin-top: 25px;
     margin-bottom: 25px;
+    column-gap: 10px;
 }
 
 h1 {
@@ -30,10 +31,6 @@ h2 {
 
 ul {
     margin: 0 auto;
-}
-
-.row {
-    column-gap: 10px;
 }
 
 .row::after {

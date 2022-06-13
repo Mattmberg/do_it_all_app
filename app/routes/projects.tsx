@@ -25,7 +25,7 @@ export default function Index() {
                 <li>CSS</li>
                 <li>Python(Originally made with this)</li>
               </ul>
-              <p><a href="https://github.com/Mattmberg/deck_builder"></a>Repository</p>
+              <p><a href="https://github.com/Mattmberg/deck_builder">Repository</a></p>
             </div>
             <div className="column">
               <h2>Voting Charts</h2>
@@ -38,7 +38,7 @@ export default function Index() {
                 <li>AJAX</li>
                 <li>MySQL</li>
               </ul>
-              <p><a href="https://github.com/Mattmberg/voting_charts"></a>Repository</p>
+              <p><a href="https://github.com/Mattmberg/voting_charts">Repository</a></p>
             </div>
             <div className="column">
               <h2>Dinner Roulette</h2>
@@ -46,7 +46,7 @@ export default function Index() {
               <ul>
                 <li>Python</li>
               </ul>
-              <p><a href="https://github.com/Mattmberg/dinner_roulette"></a>Repository</p>
+              <p><a href="https://github.com/Mattmberg/dinner_roulette">Repository</a></p>
             </div>
             <div className="column">
               <h2>Personal Website</h2>
