@@ -44,6 +44,12 @@ export default function Index() {
               Bootstrap
             </li>
             <li>
+              Git
+            </li>
+            <li>
+              Node.js
+            </li>
+            <li>
               PHP
             </li>
             <li>
@@ -56,18 +62,33 @@ export default function Index() {
               CSS
             </li>
             <li>
+              MongoDB
+            </li>
+            <li>
               XML
             </li>
             <li>
+              Python
+            </li>
+            <li>
               Prisma
+            </li>
+            <li>
+              Golang
+            </li>
+            <li>
+              Classic ASP
+            </li>
+            <li>
+              .Net
+            </li>
+            <li>
+              C++
             </li>
           </ul>
           </div>
           <div className="interpersonalskillscolumn">
             <h2>Interpersonal Skills</h2>
-          <li>
-            Self-management
-          </li>
           <li>
             Thoughtfulness
           </li>
@@ -85,6 +106,15 @@ export default function Index() {
           </li>
           <li>
             Time management
+          </li>
+          <li>
+            Negotiating through Conflict
+          </li>
+          <li>
+            Open-mindedness
+          </li>
+          <li>
+            Active listening
           </li>
           </div>
           </div>
