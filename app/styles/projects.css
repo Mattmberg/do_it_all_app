@@ -29,6 +29,10 @@ h2 {
     text-align: center;
 }
 
+.row {
+    width: auto;
+}
+
 .row::after {
     content: "";
     display: table;
