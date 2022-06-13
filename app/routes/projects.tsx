@@ -25,10 +25,11 @@ export default function Index() {
                 <li>CSS</li>
                 <li>Python(Originally made with this)</li>
               </ul>
+              <p><a href="https://github.com/Mattmberg/deck_builder"></a>Repository</p>
             </div>
             <div className="column">
               <h2>Voting Charts</h2>
-              <p>A project that updates the three Chart.JS charts in real time based on the votes sent to the MySQL database.</p>
+              <p>A project that updates three Chart.JS charts in real time based on the votes sent to the MySQL database.</p>
               <ul>
                 <li>PHP</li>
                 <li>jQuery</li>
@@ -37,6 +38,7 @@ export default function Index() {
                 <li>AJAX</li>
                 <li>MySQL</li>
               </ul>
+              <p><a href="https://github.com/Mattmberg/voting_charts"></a>Repository</p>
             </div>
             <div className="column">
               <h2>Dinner Roulette</h2>
@@ -44,9 +46,10 @@ export default function Index() {
               <ul>
                 <li>Python</li>
               </ul>
+              <p><a href="https://github.com/Mattmberg/dinner_roulette"></a>Repository</p>
             </div>
             <div className="column">
-              <h2>Personal Website(This Webapp!)</h2>
+              <h2>Personal Website</h2>
               <p>This webapp is made with the new Full Stack React Framework Remix JS.</p>
               <ul>
                 <li>React</li>

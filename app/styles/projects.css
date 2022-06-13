@@ -32,6 +32,10 @@ ul {
     margin: 0 auto;
 }
 
+.row {
+    grid-gap: 10px;
+}
+
 .row::after {
     content: "";
     display: table;
