@@ -2,7 +2,7 @@ export const myNavCards = [
     {
       id: 1,
       title: "Adventures",
-      description: "An assortment of random pictures from my daily life.(Work in Progress)",
+      description: "An assortment of random pictures from my daily life.",
       image: "RiCompass3Fill",
       navTo:"adventures",
     },
@@ -16,7 +16,7 @@ export const myNavCards = [
     {
       id: 3,
       title: "Gaming Adventures",
-      description: "Collection of screenshots from my adventures in games.(Work in Progress)",
+      description: "Collection of screenshots from my adventures in games.",
       image: "RiGlobeLine",
       navTo:"gamingadventures",
     },
@@ -58,7 +58,7 @@ export const myNavCards = [
     {
       id: 9,
       title: "My Skills",
-      description: "Here you can view my current skills along with the ones I am currently working on.(Work in Progress)",
+      description: "Here you can view my current skills along with the ones I am currently working on.",
       image: "RiShieldUserLine",
       navTo:"skills",
 
