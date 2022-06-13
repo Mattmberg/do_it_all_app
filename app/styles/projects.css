@@ -38,6 +38,6 @@ h2 {
 .column {
     float: left;
     width: 25%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
