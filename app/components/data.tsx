@@ -37,7 +37,7 @@ export const myNavCards = [
     {
       id: 6,
       title: "My Projects",
-      description: "Here is a collection of my personal projects.(Work in Progress)",
+      description: "Here is a collection of my personal projects.",
       image: "RiSpaceShipLine",
       navTo:"projects", 
     },
