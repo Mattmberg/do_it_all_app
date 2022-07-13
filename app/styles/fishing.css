@@ -36,7 +36,6 @@ header a {
     float: left;
 }
 
-
 .content {
     gap: 1rem;
     justify-content: space-between;
@@ -44,7 +43,6 @@ header a {
     padding-bottom: 2rem;
     height: 786px;
 }
-
 
 footer {
     font-size: 18px;

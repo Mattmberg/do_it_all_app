@@ -1,6 +1,6 @@
 import type {
   LinksFunction,
-} from "@remix-run/node";
+} from "@remix-run/cloudflare";
 
 import stylesUrl from "~/styles/skills.css";
 

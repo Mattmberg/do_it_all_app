@@ -1,7 +1,7 @@
 import type {
     LinksFunction,
     MetaFunction,
-  } from "@remix-run/node";
+  } from "@remix-run/cloudflare";
   import { Link } from "@remix-run/react";
   import stylesUrl from "~/styles/gamingadventures.css";
   import { myGamingAdventures } from "~/components/data";
