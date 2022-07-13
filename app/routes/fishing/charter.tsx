@@ -1,6 +1,6 @@
 import type {
     LinksFunction,
-} from "@remix-run/node";
+} from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
 
 import stylesUrl from "~/styles/charter.css";
