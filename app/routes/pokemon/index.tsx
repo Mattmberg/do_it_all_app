@@ -1,8 +1,7 @@
 import { Link, useLoaderData } from "@remix-run/react";
 import { getPokemons } from "~/models/pokemon.server";
-import { LinksFunction, LoaderFunction, json } from "@remix-run/cloudflare";
+import { LinksFunction, json } from "@remix-run/cloudflare";
 import stylesUrl from "~/styles/pokemon.css";
-import { APIResource, NamedAPIResource, NamedAPIResourceList } from "pokenode-ts";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
@@ -17,6 +16,7 @@ export const loader = async () => {
     data: await getPokemons(),
   });
 };
+
 export default function Index() {
     const { data } = useLoaderData() as LoaderData;
     return (

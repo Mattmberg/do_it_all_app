@@ -2,7 +2,6 @@ import type {
     LinksFunction,
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
-
 import stylesUrl from "~/styles/testimonials.css";
 
 export const links: LinksFunction = () => {

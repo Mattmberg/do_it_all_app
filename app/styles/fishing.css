@@ -1,6 +1,6 @@
 .remix-app {
     margin: 0 !important;
-    background-image: url("fish_background.jpg") !important;
+    background-image: url("./assets/fish_background.jpg") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
