@@ -1,24 +1,26 @@
 import { Link, useLoaderData } from "@remix-run/react";
 import { getPokemons } from "~/models/pokemon.server";
-import { LinksFunction, json } from "@remix-run/node";
+import { LinksFunction } from "@remix-run/node";
 import stylesUrl from "~/styles/pokemon.css";
+import { APIResource, NamedAPIResource, NamedAPIResourceList } from "pokenode-ts";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
 };
 
 type LoaderData = {
-  data: Awaited<ReturnType<typeof getPokemons>>;
-};
+  data: NamedAPIResource[];
+}
 
-export const loader = async () => {
-  return json<LoaderData>({
-    data: await getPokemons(),
-  });
-};
+export const data = async () => {
+    return {
+      data: await getPokemons(),
+    }
+}
+
 
 export default function Index() {
-  const { data } = useLoaderData() as LoaderData;
+ const { data } = useLoaderData() as LoaderData;
   return (
     <main className="mx-auto max-w-4xl">
       <h1 className="my-6 border-b-2 text-center text-3xl">
