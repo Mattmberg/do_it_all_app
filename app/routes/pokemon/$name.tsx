@@ -1,7 +1,6 @@
-import { LoaderFunction } from "@remix-run/node";
+import { LinksFunction, LoaderFunction, json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 import { getPokemon } from "~/models/pokemon.server";
-import { LinksFunction } from "@remix-run/node";
 import { Pokemon } from "pokenode-ts";
 
 import stylesUrl from "~/styles/pokemon.css";
@@ -11,23 +10,23 @@ export const links: LinksFunction = () => {
 };
 
 type LoaderData = {
-  pokemon: Pokemon;
+  pokemon: Awaited<ReturnType<typeof getPokemon>>;
 };
 
 export const loader: LoaderFunction = async ({params,}) => {
-  return ({
-    pokemon: getPokemon(params.name),
+  return json({
+    pokemon: await getPokemon(params.name),
   });
 };
 
-export default function PokemonSlug() {
+export default function PostSlug() {
   const { pokemon } = useLoaderData() as LoaderData;
   return (
-    <main>
-      <h1>
+    <main className="mx-auto max-w-4xl">
+      <h1 className="my-6 border-b-2 text-center text-3xl">
         You caught: {pokemon.name}
       </h1>
-      <img>{pokemon.sprites.front_default}</img>
+      <img className='mx-auto' src={pokemon.img} />
     </main>
   );
 }

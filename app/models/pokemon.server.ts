@@ -1,22 +1,18 @@
-import { PokemonClient } from 'pokenode-ts';
-
 export async function getPokemons() {
-  const api = new PokemonClient();
+  const res = await fetch(
+    'https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0'
+  ).then((res) => res.json());
 
-  const { results } = await api
-    .listPokemons(100000, 0)
+  return res.results;
+}
 
-    return results
-};
+export async function getPokemon(name: string | undefined) {
+  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`).then(
+    (res) => res.json()
+  );
 
-export async function getPokemon(name: string) {
-  const api = new PokemonClient();
-
-  const { sprites } = await api
-    .getPokemonByName(name)
-
-    return {
-      name: name, 
-      img: sprites.front_default,
-    } 
+  return {
+    name: name,
+    img: res.sprites.front_default,
+  };
 }
