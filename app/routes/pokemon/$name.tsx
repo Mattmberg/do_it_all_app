@@ -2,6 +2,7 @@ import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { getPokemon } from "~/models/pokemon.server";
 import { LinksFunction } from "@remix-run/node";
+import { Pokemon } from "pokenode-ts";
 
 import stylesUrl from "~/styles/pokemon.css";
 
@@ -10,12 +11,12 @@ export const links: LinksFunction = () => {
 };
 
 type LoaderData = {
-  pokemon: Awaited<ReturnType<typeof getPokemon>>;
+  pokemon: Pokemon;
 };
 
 export const loader: LoaderFunction = async ({params,}) => {
-  return json({
-    pokemon: await getPokemon(params.name),
+  return ({
+    pokemon: getPokemon(params.name),
   });
 };
 
@@ -26,7 +27,7 @@ export default function PokemonSlug() {
       <h1>
         You caught: {pokemon.name}
       </h1>
-      <img src={pokemon.img} />
+      <img>{pokemon.sprites.front_default}</img>
     </main>
   );
 }
