@@ -1,64 +1,64 @@
 body, html {
-    margin: 0;
-    background-image: url("fish_background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    margin: 0 !important;
+    background-image: url("fish_background.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 100% !important;
+    width: 100% !important;
 }
 
 header {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--color-border);
-    font-size: 18px;
-    color: black;
-    text-decoration-style: wavy;
-    background-color: aliceblue;
-    padding: 12px;
+    padding-bottom: 1rem !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    font-size: 18px !important;
+    color: black !important;
+    text-decoration-style: wavy !important;
+    background-color: aliceblue !important;
+    padding: 12px !important;
     background: rgb(204, 204, 204, 0.25);
-    background-size: cover;
-    height: 40px;
+    background-size: cover !important;
+    height: 40px !important;
 }
 
 header a {
-    padding: 10px;
-    color: black;
-    font-weight: bold;
-    float: left;
+    padding: 10px !important;
+    color: black !important;
+    font-weight: bold !important;
+    float: left !important;
 }
 
 .links {
-    float: right;
+    float: right !important;
 }
 
 .logolink {
-    float: left;
+    float: left !important;
 }
 
 .content {
-    gap: 1rem;
-    justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    height: 786px;
+    gap: 1rem !important;
+    justify-content: space-between !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    height: 786px !important;
 }
 
 footer {
-    font-size: 18px;
-    color: black;
-    text-decoration-style: wavy;
-    background-color: aliceblue;
-    background: rgb(204, 204, 204, 0.125);
-    background-size: cover;
-    padding: 5px;
-    border-top: 1px solid var(--color-border);
-    text-align: center;
-    height: 45px;
+    font-size: 18px !important;
+    color: black !important;
+    text-decoration-style: wavy !important;
+    background-color: aliceblue !important;
+    background: rgb(204, 204, 204, 0.125) !important;
+    background-size: cover !important;
+    padding: 5px !important;
+    border-top: 1px solid var(--color-border) !important;
+    text-align: center !important;
+    height: 45px !important;
 }
 
 .footerLinks {
-    font-weight: bold;
-    text-decoration: underline;
-    text-align: center;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-align: center !important;
 }
