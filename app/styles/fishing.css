@@ -1,4 +1,4 @@
-body, html {
+.remix-app {
     margin: 0 !important;
     background-image: url("fish_background.jpg") !important;
     background-size: cover !important;
@@ -61,4 +61,12 @@ footer {
     font-weight: bold !important;
     text-decoration: underline !important;
     text-align: center !important;
+}
+
+.remix-app__header {
+    display: none;
+}
+
+.remix-app__footer {
+    display: none;
 }
