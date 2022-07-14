@@ -21,12 +21,14 @@ export const loader: LoaderFunction = async ({params,}) => {
 
 export default function PostSlug() {
   const { pokemon } = useLoaderData() as LoaderData;
+  const listItems = pokemon.type.map((type) => <li>{type}</li>);
   return (
     <main className="mx-auto max-w-4xl">
       <h1 className="my-6 border-b-2 text-center text-3xl">
         You caught: {pokemon.name}
       </h1>
       <img className='mx-auto' src={pokemon.img} />
+      <ul>{listItems}</ul>
     </main>
   );
 }

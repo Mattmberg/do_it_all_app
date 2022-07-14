@@ -3,24 +3,25 @@ import type {
     MetaFunction,
 } from "@remix-run/cloudflare";
 import Tilt from "react-parallax-tilt";
-import { Card } from "~/types";
+import { Recipe } from "~/types";
 import stylesUrl from "~/styles/card.css";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl }];
   };
 
-export const CardList = ({ id, title, description, image, color}: Card) => {
+export const RecipeCardList = ({ id, title, description, ingredients}: Recipe) => {
+    const listItems = ingredients.map((ingredient) => <li>{ingredient}</li>)
     return (
     <Tilt>
         <div className ="cardwrapper">
-            <img className="cardimage" src={image}/>
             <div className="cardtextwrapper">
                 <span className="cardtextdate"></span>
                 <h2 className="cardtexttitle">{title}</h2>
                 <p className="cardtextbody">
                     {description}
                 </p>
+                <ul>{listItems}</ul>
             </div>
             <div className="cardstatwrapper">
                 <div className="cardstats">

@@ -13,3 +13,10 @@ export type Card = {
     image: string;
     color?: string | number;
 }
+
+export interface Recipe {
+    id: number;
+    title: string;
+    description: string;
+    ingredients: string[];
+}

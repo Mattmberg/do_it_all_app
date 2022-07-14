@@ -160,3 +160,30 @@ export const myGamingAdventures = [
         image: "./assets/computer_after.jpeg",
       },
 ]
+
+export const myRecipes = [
+  {
+    id: 1,
+    title: "Meatball Sub",
+    description: "A delicious meatball sub.",
+    ingredients: ["Meatballs", "Cheese", "Sub Rolls"],
+  },
+  {
+    id: 2,
+    title: "Cheeseburger",
+    description: "Tasty cheese burger.",
+    ingredients: ["Buns", "Patty", "Cheese"],
+  },
+  {
+    id: 3,
+    title: "Chicken Broccoli Alfredo",
+    description: "A fantastic pasta dish.",
+    ingredients: ["Pasta","Broccoli","Chicken", "Heavy Cream", "Minced Garlic", "Grated Parmesan Cheese", "Nutmeg", "Black Pepper", "Salt", "Butter"],
+  },
+  {
+    id: 4,
+    title: "Chicken Parmesan",
+    description: "An incredible air frier recipe.",
+    ingredients: ["Chicken", "Salt", "Black Pepper", "Eggs", "Flour", "Panko Breadcrumbs", "Parmesan Cheese", "Marinara Sauce", "Fresh Mozzarella Cheese", "Fresh Finely Chopped Parsley"],
+  },
+]

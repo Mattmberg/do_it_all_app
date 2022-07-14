@@ -1,6 +1,8 @@
 import type {
   LinksFunction,
 } from "@remix-run/cloudflare";
+import { myRecipes } from "~/components/data";
+import { RecipeCardList } from "~/components/recipecard";
 
 import stylesUrl from "~/styles/recipes.css";
 
@@ -11,13 +13,12 @@ export const links: LinksFunction = () => {
 export default function Index() {
     return (
       <div className="container">
-        <div className="header">
-        </div>
-        <div className="content">
           <h1>Recipes</h1>
-        </div>
-        <div className="footer">
-        </div>
+          <div className="cardcomponentgrid">
+              {myRecipes.map(recipe => {
+                  return <RecipeCardList key={recipe.id} {...recipe} />;    
+              })}
+          </div>
       </div>
     );
   }
