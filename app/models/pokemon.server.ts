@@ -14,6 +14,5 @@ export async function getPokemon(name: string | undefined) {
   return {
     name: name,
     img: res.sprites.front_default,
-    type: res.types,
   };
 }
