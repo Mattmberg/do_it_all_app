@@ -46,30 +46,3 @@ ul {
     float: right;
     width: 50%;
 }
-
-header {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--color-border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-top: 1px solid var(--color-border);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    background-color: var(--color-border);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }

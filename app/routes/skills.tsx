@@ -11,8 +11,6 @@ export const links: LinksFunction = () => {
 export default function Index() {
     return (
       <div className="container">
-        <div className="header">
-        </div>
         <div className="content">
           <h1>My Skills</h1>
           <div className="listsrow">
@@ -119,11 +117,6 @@ export default function Index() {
           </div>
           </div>
         </div>
-        <footer>
-        <div>
-          <p>&copy; Me</p>
-        </div>
-      </footer>
       </div>
     );
   }
