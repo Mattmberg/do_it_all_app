@@ -119,8 +119,11 @@ export default function Index() {
           </div>
           </div>
         </div>
-        <div className="footer">
+        <footer>
+        <div>
+          <p>&copy; Me</p>
         </div>
+      </footer>
       </div>
     );
   }
