@@ -1,4 +1,4 @@
-import { LinksFunction, LoaderFunction, json } from "@remix-run/node";
+import { LinksFunction, LoaderFunction, json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 import { getPokemon } from "~/models/pokemon.server";
 import { Pokemon } from "pokenode-ts";
