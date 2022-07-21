@@ -12,18 +12,12 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   passwordHash String
-  email String @unique
+  email String? @unique
   username String @unique
-  password String
-  profile Profile
   recipes    Recipe[]
   habits       Habit[]
   budgets      Budget[]
   favorites Favorite[]
-}
-
-type Profile {
-  fullName String
 }
 
 model Recipe {
