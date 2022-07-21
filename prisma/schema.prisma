@@ -11,11 +11,60 @@ model User {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  passwordHash String
   email String @unique
+  username String @unique
   password String
   profile Profile
+  recipes    Recipe[]
+  habits       Habit[]
+  budgets      Budget[]
+  favorites Favorite[]
 }
 
 type Profile {
   fullName String
+}
+
+model Recipe {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  name       String
+  content    String
+}
+
+model Habit {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  userId     String
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  name      String
+  content   String
+}
+
+model Budget {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  userId     String
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  name      String
+  content   String
+  income    Int
+  expense   Int
+  total     Int
+}
+
+model Favorite {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  userId     String
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  favoritePokemon String
+  favoriteType String
 }
