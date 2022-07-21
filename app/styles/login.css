@@ -23,3 +23,17 @@
 h1 {
     text-decoration: underline;
 }
+
+fieldset {
+    display: flex;
+    justify-content: center;
+  }
+
+.links ul {
+    margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
