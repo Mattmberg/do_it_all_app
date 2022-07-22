@@ -17,10 +17,10 @@
 .cardwrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 420px 80px;
+    grid-template-rows: 360px 60px;
     grid-template-areas: "text" "stats";
     border-radius: 18px;
-    background: #000;
+    background: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     margin-top: 15px;
@@ -29,7 +29,7 @@
 
 .cardtextwrapper {
     grid-area: text;
-    background: #2e8bc0;
+    background: white;
     margin: 25px;
 }
 
