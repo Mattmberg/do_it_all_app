@@ -236,7 +236,7 @@ export const myRecipes = [
   },
   {
     id: 10,
-    title: "BBQ Meatloaf and Veggie",
+    title: "BBQ Meatloaf and Veggies",
     description: "",
     ingredients: [],
   },
