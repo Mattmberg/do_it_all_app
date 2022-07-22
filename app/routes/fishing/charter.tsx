@@ -18,9 +18,9 @@ export default function Index() {
             </div>
             <div className="links">
             <Link to="/fishing">Home</Link>
-            <Link to="/charter">Charter Rates/Information</Link>
-            <Link to="/testimonials">Testimonials</Link>
-            <Link to="/about-fishing">About Us</Link>
+            <Link to="fishing/charter">Charter Rates/Information</Link>
+            <Link to="fishing/testimonials">Testimonials</Link>
+            <Link to="fishing/about-fishing">About Us</Link>
             </div>
         </header>
         <div className="content">

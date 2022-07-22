@@ -1,72 +1,66 @@
-.remix-app {
-    margin: 0 !important;
-    background-image: url("./assets/fish_background.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    height: 100% !important;
-    width: 100% !important;
+body, html {
+    margin: 0;
+    background-image: url("fish_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }
 
 header {
-    padding-bottom: 1rem !important;
-    border-bottom: 1px solid var(--color-border) !important;
-    font-size: 18px !important;
-    color: black !important;
-    text-decoration-style: wavy !important;
-    background-color: aliceblue !important;
-    padding: 12px !important;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 18px;
+    color: black;
+    text-decoration-style: wavy;
+    background-color: aliceblue;
+    padding: 12px;
     background: rgb(204, 204, 204, 0.25);
-    background-size: cover !important;
-    height: 40px !important;
+    background-size: cover;
+    height: 40px;
 }
 
 header a {
-    padding: 10px !important;
-    color: black !important;
-    font-weight: bold !important;
-    float: left !important;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    float: left;
 }
 
 .links {
-    float: right !important;
+    float: right;
 }
 
 .logolink {
-    float: left !important;
+    float: left;
 }
+
 
 .content {
-    gap: 1rem !important;
-    justify-content: space-between !important;
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-    height: 786px !important;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 786px;
 }
 
+
 footer {
-    font-size: 18px !important;
-    color: black !important;
-    text-decoration-style: wavy !important;
-    background-color: aliceblue !important;
-    background: rgb(204, 204, 204, 0.125) !important;
-    background-size: cover !important;
-    padding: 5px !important;
-    border-top: 1px solid var(--color-border) !important;
-    text-align: center !important;
-    height: 45px !important;
+    font-size: 18px;
+    color: black;
+    text-decoration-style: wavy;
+    background-color: aliceblue;
+    background: rgb(204, 204, 204, 0.125);
+    background-size: cover;
+    padding: 5px;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    height: 45px;
 }
 
 .footerLinks {
-    font-weight: bold !important;
-    text-decoration: underline !important;
-    text-align: center !important;
-}
-
-.remix-app__header {
-    display: none;
-}
-
-.remix-app__footer {
-    display: none;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
 }
