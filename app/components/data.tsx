@@ -138,6 +138,24 @@ export const myGamingAdventures = [
       description: "A monolith in the Plains!",
       image: "./assets/plains_monolith.jpg",
     },
+    {
+      id: 13,
+      title: "Depths",
+      description: "The depths of a cave system close to the core of the planet.",
+      image: "./assets/depths.jpg",
+    },
+    {
+      id: 14,
+      title: "Mysterious Object",
+      description: "A mysterious object that teleports and changes patterns when interacted with.",
+      image: "./assets/mysterious_object.jpg",
+    },
+    {
+      id: 15,
+      title: "Giant Mushrooms",
+      description: "Giant mushrooms found closer to the center of this planet.",
+      image: "./assets/giant_mushrooms.jpg",
+    },
   ]
 
   export const myAdventures = [
@@ -185,5 +203,53 @@ export const myRecipes = [
     title: "Chicken Parmesan",
     description: "An incredible air frier recipe.",
     ingredients: ["Chicken", "Salt", "Black Pepper", "Eggs", "Flour", "Panko Breadcrumbs", "Parmesan Cheese", "Marinara Sauce", "Fresh Mozzarella Cheese", "Fresh Finely Chopped Parsley"],
+  },
+  {
+    id: 5,
+    title: "American Chop Suey",
+    description: "",
+    ingredients: [],
+  },
+  {
+    id: 6,
+    title: "Steak and Cheese Subs",
+    description: "",
+    ingredients: [],
+  },
+  {
+    id: 7,
+    title: "Chicken Fajitas",
+    description: "",
+    ingredients: [],
+  },
+  {
+    id: 8,
+    title: "Chicken Quesadillas",
+    description: "",
+    ingredients: [],
+  },
+  {
+    id: 9,
+    title: "",
+    description: "",
+    ingredients: [],
+  },
+  {
+    id: 10,
+    title: "",
+    description: "",
+    ingredients: [],
+  },
+  {
+    id: 11,
+    title: "",
+    description: "",
+    ingredients: [],
+  },
+  {
+    id: 12,
+    title: "",
+    description: "",
+    ingredients: [],
   },
 ]
