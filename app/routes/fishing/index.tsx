@@ -11,7 +11,7 @@ export const links: LinksFunction = () => {
 
 export default function Index() {
     return (
-      <div className="container">
+      <div className="container" style={ { backgroundImage: "url('./assets/fish_background.jpg')" } }>
         <header>
             <div className="logoLink">
             <Link to="/fishing">Logo</Link>
