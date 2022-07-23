@@ -20,3 +20,13 @@ export interface Recipe {
     description: string;
     ingredients: string[];
 }
+
+export interface ReviewCards {
+    id: number;
+    title: string;
+    firstName: string;
+    lastName: string;
+    stars: number;
+    comment: string;
+    timestamp: number;
+}
