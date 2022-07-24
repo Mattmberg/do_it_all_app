@@ -16,7 +16,7 @@ header {
     padding: 12px;
     background: rgb(204, 204, 204, 0.25);
     background-size: cover;
-    height: 40px;
+    height: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ footer {
     background-size: cover;
     padding: 5px;
     text-align: center;
-    height: 45px;
+    height: 25px;
 }
 
 .container {
