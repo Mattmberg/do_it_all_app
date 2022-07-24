@@ -51,6 +51,9 @@ footer {
     padding: 5px;
     text-align: center;
     height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {

@@ -36,10 +36,10 @@ export default function Index() {
                 return <NavCardList key={navcards.id} {...navcards} />;    
             })}
           </div>
-          <footer>
-        <div >
-          <p>&copy; Me</p>
-        </div>
+        <footer>
+          <div>
+            <p>&copy; Me</p>
+          </div>
       </footer>
     </div>
   );
