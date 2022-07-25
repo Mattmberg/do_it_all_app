@@ -313,3 +313,41 @@ export const myRecipes = [
     ingredients: [],
   },
 ]
+
+export const myReviews = [
+  {
+    id: 1,
+    title: "Fantastic!",
+    firstName: "First",
+    lastName: "Last",
+    comment: "Great",
+    stars: 5,
+    timestamp: "7 weeks ago"
+  },
+  {
+    id: 2,
+    title: "Fantastic!",
+    firstName: "Second",
+    lastName: "Last",
+    comment: "Great",
+    stars: 5,
+    timestamp: "7 weeks ago"
+  },
+]
+
+export const myItems = [
+  {
+    id: 1,
+    name: "",
+    image: "",
+    description: "",
+    department: "",
+    subDepartment: "",
+    brand: "",
+    ageRange: "",
+    material: "",
+    yearOfRelease: "0000",
+    price: 0.00,
+    sale: false,
+  },
+]
