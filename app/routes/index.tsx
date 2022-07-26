@@ -30,6 +30,15 @@ export default function Index() {
               <li>
                 <Link to="/pokemon">Catch a Pokemon</Link>
               </li>
+              <li>
+                <Link to="/fishing">Fishing </Link>
+              </li>
+              <li>
+                <Link to="/onlinestore">Online Store Demo</Link>
+              </li>
+              <li>
+                <Link to="/restaurant">Restaurant Demo</Link>
+              </li>
             </ul>
           </nav>
         </div>
