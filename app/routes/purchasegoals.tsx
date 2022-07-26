@@ -12,9 +12,9 @@ export const links: LinksFunction = () => {
 export default function Index() {
     return (
       <div className="container">
-              <header className="remix-app__header">
-        <div className="container remix-app__header-content">
-          <nav aria-label="Main navigation" className="remix-app__header-nav">
+        <header>
+        <div>
+          <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -32,8 +32,8 @@ export default function Index() {
         <div className="content">
           <h1>Purchasing Goal Calculator</h1>
         </div>
-        <footer className="remix-app__footer">
-        <div className="container remix-app__footer-content">
+        <footer>
+        <div>
           <p>&copy; Me</p>
         </div>
       </footer>

@@ -14,9 +14,9 @@ import type {
   export default function Index() {
     return (
       <div className="container">
-      <header className="remix-app__header">
-        <div className="container remix-app__header-content">
-          <nav aria-label="Main navigation" className="remix-app__header-nav">
+      <header>
+        <div>
+          <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -36,8 +36,8 @@ import type {
                   return <CardList key={gamingadventure.id} {...gamingadventure} />;    
               })}
             </div>
-            <footer className="remix-app__footer">
-        <div className="container remix-app__footer-content">
+            <footer>
+        <div>
           <p>&copy; Me</p>
         </div>
       </footer>

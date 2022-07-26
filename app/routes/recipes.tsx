@@ -14,9 +14,9 @@ export const links: LinksFunction = () => {
 export default function Index() {
     return (
       <div className="container">
-                      <header className="remix-app__header">
-        <div className="container remix-app__header-content">
-          <nav aria-label="Main navigation" className="remix-app__header-nav">
+        <header className="remix-app__header">
+        <div>
+          <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -37,8 +37,8 @@ export default function Index() {
                   return <RecipeCardList key={recipe.id} {...recipe} />;    
               })}
           </div>
-          <footer className="remix-app__footer">
-        <div className="container remix-app__footer-content">
+          <footer>
+        <div>
           <p>&copy; Me</p>
         </div>
       </footer>
