@@ -1,3 +1,61 @@
+body, html {
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    padding-bottom: 1rem;
+    font-size: 18px;
+    color: black;
+    text-decoration-style: wavy;
+    background-color: aliceblue;
+    padding: 12px;
+    background: rgb(204, 204, 204, 0.25);
+    background-size: cover;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    float: left;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+header li {
+    font-weight: bold;
+}
+
+footer {
+    font-size: 18px;
+    color: black;
+    text-decoration-style: wavy;
+    background-color: aliceblue;
+    background: rgb(204, 204, 204, 0.125);
+    background-size: cover;
+    padding: 5px;
+    text-align: center;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main {
     text-align: center;
 }
