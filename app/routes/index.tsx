@@ -27,6 +27,9 @@ export default function Index() {
               <li>
                 <a href="https://github.com/Mattmberg">GitHub</a>
               </li>
+              <li>
+                <Link to="/pokemon">Catch a Pokemon</Link>
+              </li>
             </ul>
           </nav>
         </div>

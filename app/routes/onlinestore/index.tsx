@@ -3,7 +3,7 @@ import type {
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
 
-import stylesUrl from "~/styles/fishing.css";
+import stylesUrl from "~/styles/onlinestore.css";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
@@ -11,16 +11,16 @@ export const links: LinksFunction = () => {
 
 export default function Index() {
     return (
-      <div className="container" style={ { backgroundImage: "url('./assets/fish_background.jpg')" } }>
+      <div className="container">
         <header>
             <div className="logoLink">
-            <Link to="/fishing">Logo</Link>
+            <Link to="/onlinestore">Logo</Link>
             </div>
             <div className="links">
-            <Link to="/fishing">Home</Link>
-            <Link to="/fishing/charter">Charter Rates/Information</Link>
-            <Link to="/fishing/testimonials">Testimonials</Link>
-            <Link to="/fishing/about-fishing">About Us</Link>
+            <Link to="/onlinestore">Home</Link>
+            <Link to="/onlinestore/charter">Charter Rates/Information</Link>
+            <Link to="/onlinestore/testimonials">Testimonials</Link>
+            <Link to="/onlinestore/about-fishing">About Us</Link>
             </div>
         </header>
         <div className="content">
