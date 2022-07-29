@@ -16,10 +16,12 @@ header {
 }
 
 header a {
-    padding: 10px;
     color: black;
     font-weight: bold;
     float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
 }
 
 header ul {
@@ -39,6 +41,7 @@ header li {
     background-color: #333;
     width: 100%;
     position: absolute;
+    top: 0;
 }
 
 .categoryNav {
@@ -59,14 +62,6 @@ header li {
 footer {
     font-size: 18px;
     color: black;
-    text-decoration-style: wavy;
-    background-color: aliceblue;
-    background: rgb(204, 204, 204, 0.125);
-    background-size: cover;
-    padding: 5px;
+    padding: 20px;
     text-align: center;
-    height: 41px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
