@@ -1,4 +1,4 @@
-html {
+* {
     box-sizing: border-box;
 }
 
@@ -30,27 +30,12 @@ header li {
 
 }
 
-.mainNav {
+.mainNav .categoryNav {
     overflow: hidden;
     background-color: #333;
-    width: 100%;
+    min-width: 100%;
     position: absolute;
     top: 0;
-}
-
-.categoryNav {
-    float: left;
-    overflow: hidden;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    width: 100%;
-    position: absolute;
 }
 
 .content {
