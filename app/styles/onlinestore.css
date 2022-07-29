@@ -8,18 +8,7 @@ body, html {
 }
 
 header {
-    padding-bottom: 1rem;
-    font-size: 18px;
-    color: black;
-    text-decoration-style: wavy;
-    background-color: aliceblue;
-    padding: 12px;
-    background: rgb(204, 204, 204, 0.25);
-    background-size: cover;
-    height: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
 header a {
@@ -44,6 +33,8 @@ header li {
 .mainNav {
     overflow: hidden;
     background-color: #333;
+    width: 100%;
+    position: absolute;
 }
 
 .categoryNav {
@@ -57,6 +48,8 @@ header li {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    width: 100%;
+    position: absolute;
 }
 
 footer {
