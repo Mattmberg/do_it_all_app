@@ -1,8 +1,9 @@
-* {
+html {
     box-sizing: border-box;
 }
 
 body, html {
+    padding: 0;
     margin: 0;
     min-height: 100%;
     min-width: 100%;
@@ -22,15 +23,11 @@ header a {
 }
 
 header ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
+
 }
 
 header li {
-    font-weight: bold;
+
 }
 
 .mainNav {
@@ -54,6 +51,14 @@ header li {
     margin: 0;
     width: 100%;
     position: absolute;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
