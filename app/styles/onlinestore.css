@@ -13,7 +13,7 @@ header {
 
 }
 
-header a {
+a {
     color: black;
     font-weight: bold;
     float: left;
@@ -29,7 +29,18 @@ header li {
 
 }
 
-.mainNav .categoryNav {
+.mainNav {
+    overflow: hidden;
+    background-color: #333;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 20px;
+}
+
+.categoryNav {
     overflow: hidden;
     background-color: #333;
     min-width: 100%;
