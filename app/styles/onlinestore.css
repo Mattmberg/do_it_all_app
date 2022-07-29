@@ -35,11 +35,14 @@ header li {
     min-width: 100%;
     position: absolute;
     top: 0;
-    padding: 14px 20px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 20px;
 }
 
 .content {
-    padding: 20px;
+    padding: 50px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
