@@ -10,7 +10,7 @@ body, html {
 }
 
 header {
-
+ display: flex;
 }
 
 a {
@@ -37,7 +37,6 @@ header li {
     top: 0;
     border: 1px solid black;
     padding: 50px;
-    margin: 20px;
 }
 
 .categoryNav {
@@ -48,7 +47,6 @@ header li {
     top: 0;
     border: 1px solid black;
     padding: 50px;
-    margin: 20px;
 }
 
 .content {
