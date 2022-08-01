@@ -30,7 +30,6 @@ header li {
 }
 
 .mainNav {
-    overflow: hidden;
     background-color: #333;
     min-width: 100%;
     position: absolute;
@@ -40,7 +39,6 @@ header li {
 }
 
 .categoryNav {
-    overflow: hidden;
     background-color: #333;
     min-width: 100%;
     position: absolute;

@@ -8,23 +8,18 @@ body, html, #app, #app>div {
 }
 
 header {
-    padding-bottom: 1rem;
-    font-size: 18px;
-    color: black;
-    text-decoration-style: wavy;
-    background-color: aliceblue;
-    padding: 12px;
-    background: rgb(204, 204, 204, 0.25);
-    background-size: cover;
-    height: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    border: 1px solid black;
+    padding: 50px;
 }
 
 header a {
     padding: 10px;
-    color: black;
+    color: white;
     font-weight: bold;
     float: left;
 }
