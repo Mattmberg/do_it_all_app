@@ -2,6 +2,8 @@ import type {
     LinksFunction,
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
+import { myItems } from "~/components/data";
+import { ItemCard } from "~/components/itemcard";
 
 import stylesUrl from "~/styles/onlinestore.css";
 
@@ -31,7 +33,11 @@ export default function Index() {
             </div>
         </header>
         <div className="content">
-
+            <div className="cardcomponentgrid">
+                {myItems.map(items => {
+                    return <ItemCard key={items.id} {...items} />;    
+                })}
+            </div>
         </div>
         <footer>
             <div className="footerLinks">

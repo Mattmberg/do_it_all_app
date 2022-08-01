@@ -30,3 +30,19 @@ export interface ReviewCards {
     comment: string;
     timestamp: string;
 }
+
+export interface ItemCards {
+    id: number;
+    name: string;
+    image?: string;
+    description: string;
+    department: string;
+    subDepartment?: string;
+    brand?: string;
+    ageRange?: string;
+    material?: string;
+    yearOfRelease: string;
+    price: number;
+    rating: number;
+    sale?: boolean;
+}
