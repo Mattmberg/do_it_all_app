@@ -326,12 +326,12 @@ export const myReviews = [
   },
   {
     id: 2,
-    title: "Fantastic!",
+    title: "Awesome!",
     firstName: "Second",
     lastName: "Last",
-    comment: "Great",
+    comment: "Fantastic service!",
     stars: 5,
-    timestamp: "7 weeks ago"
+    timestamp: "4 weeks ago"
   },
 ]
 

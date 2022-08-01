@@ -43,6 +43,8 @@ header a {
     padding-top: 2rem;
     padding-bottom: 2rem;
     height: 786px;
+    margin-left: 400px;
+    margin-right: 400px;
 }
 
 .cardwrapper {

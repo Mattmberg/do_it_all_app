@@ -28,5 +28,5 @@ export interface ReviewCards {
     lastName: string;
     stars: number;
     comment: string;
-    timestamp: number;
+    timestamp: string;
 }
