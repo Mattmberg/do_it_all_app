@@ -3,6 +3,8 @@ import type {
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
 import stylesUrl from "~/styles/testimonials.css";
+import { ReviewCard } from "~/components/reviewcard";
+import { myReviews } from "~/components/data";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
@@ -25,11 +27,11 @@ export default function Index() {
         <div className="content">
             <h1><u>Testimonials</u></h1>
 
-            <div className="testimonialCard">
-
-                <p>This company is great!</p>
-
-            </div>
+        <div className="cardcomponentgrid">
+            {myReviews.map(reviews => {
+                return <ReviewCard key={reviews.id} {...reviews} />;    
+            })}
+        </div>
             
 
         </div>

@@ -45,6 +45,20 @@ header a {
     height: 786px;
 }
 
+.cardwrapper {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.cardwrapper::after {
+    content: "";
+    clear: both;
+    display: table;  
+}
+
 .testimonialCard {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;

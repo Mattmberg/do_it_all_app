@@ -15,10 +15,10 @@ export const myNavCards = [
     },
     {
       id: 3,
-      title: "Gaming Adventures",
-      description: "Collection of screenshots from my adventures in games.",
+      title: "Hobbies",
+      description: "Collection of pictures from my various hobbies.",
       image: "RiGlobeLine",
-      navTo:"gamingadventures",
+      navTo:"hobbies",
     },
     {
       id: 4,

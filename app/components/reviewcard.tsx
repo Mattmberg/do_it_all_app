@@ -12,7 +12,7 @@ export function ReviewCard({ id, title, firstName, lastName, stars, comment, tim
             <p className="cardtextbody">
                 {comment}
             </p>
-            <h5>{stars}</h5>
+            <h5>Rating: {stars}</h5>
             <p>{timestamp}</p>
         </div>
     </div>
