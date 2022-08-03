@@ -11,6 +11,17 @@ body, html {
     width: 100%;
 }
 
+input[type=text] .searchContainer button {
+    width: 33.33%;
+    padding: 14px 16px;
+    float: left;
+    border: none;
+}
+
+button {
+
+}
+
 a {
     float: left;
     display: block;
@@ -24,14 +35,14 @@ a {
     overflow: hidden;
     background-color: #333;
     min-width: 100%;
-    border: 1px solid black;
+    border: none;
 }
 
 .categoryNav {
     overflow: hidden;
     background-color: #333;
     min-width: 100%;
-    border: 1px solid black;
+    border: none;
 }
 
 .content {
@@ -46,6 +57,7 @@ a {
 }
 
 .cardwrapper {
+    align-content: center;
     border: 2px solid #ccc;
     background-color: #eee;
     border-radius: 5px;

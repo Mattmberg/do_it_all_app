@@ -17,7 +17,10 @@ export default function Index() {
         <header>
             <div className="mainNav">
             <Link to="/onlinestore">Logo</Link>
-            <input type="text" placeholder="Search..." />
+            <div className="searchContainer">
+            <input type="text" placeholder="Search..." name="search" />
+            <button type="submit">Submit</button>
+            </div>
             </div>
             <div className="categoryNav">
             <Link to="/onlinestore">Home</Link>

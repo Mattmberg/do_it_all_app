@@ -9,10 +9,10 @@ export function ItemCard({ id, name, image, description, department, subDepartme
         <div className="cardtextwrapper">
             <h2 className="cardtexttitle">{name}</h2>
             <p className="cardtextbody">
-                {description}
+                About this item: {description}
             </p>
             <h5>Rating: {rating}</h5>
-            <p>{price}</p>
+            <p>Price: {price}</p>
         </div>
     </div>
     );

@@ -4,6 +4,8 @@ import type {
 import { Link } from "@remix-run/react";
 
 import stylesUrl from "~/styles/onlinestore.css";
+import { myItems } from "~/components/data";
+import { ItemCard } from "~/components/itemcard";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
@@ -31,7 +33,11 @@ export default function Index() {
             </div>
         </header>
         <div className="content">
-
+        <div className="cardcomponentgrid">
+                {myItems.filter(item => item.department === 'Tech').map(filteredItems => {
+                    return <ItemCard key={filteredItems.id} {...filteredItems} />;    
+                })}
+            </div>
         </div>
         <footer>
             <div className="footerLinks">
