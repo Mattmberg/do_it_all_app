@@ -5,7 +5,7 @@ import { Link } from "@remix-run/react";
 import { myItems } from "~/components/data";
 import { ItemCard } from "~/components/itemcard";
 
-import stylesUrl from "~/styles/onlinestore.css";
+import stylesUrl from "~/styles/checkout.css";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
