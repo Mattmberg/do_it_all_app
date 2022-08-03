@@ -34,7 +34,7 @@ export default function Index() {
         </header>
         <div className="content">
         <div className="cardcomponentgrid">
-                {myItems.filter(item => item.department === 'Tech').map(filteredItems => {
+                {myItems.filter(item => item.department === "Tech").map(filteredItems => {
                     return <ItemCard key={filteredItems.id} {...filteredItems} />;    
                 })}
             </div>
