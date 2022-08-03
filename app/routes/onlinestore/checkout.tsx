@@ -36,8 +36,8 @@ export default function Index() {
             <Link to="/onlinestore/food">Food</Link>
             </div>
         </header>
-
-        <div className="row">
+<main>
+<div className="row">
   <div className="col-75">
     <div className="content">
       <form action="/action_page.php">
@@ -120,7 +120,7 @@ export default function Index() {
     </div>
   </div>
 </div>
-
+</main>
         <footer>
             <div className="footerLinks">
                 <p>Facebook Twitter Instagram Icon Spots - Everything on this page is demo only.</p>
