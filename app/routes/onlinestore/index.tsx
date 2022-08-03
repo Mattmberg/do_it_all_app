@@ -21,6 +21,7 @@ export default function Index() {
             <input type="text" placeholder="Search..." name="search" />
             <button type="submit">Submit</button>
             </div>
+            <Link to="/onlinestore/checkout">Checkout</Link>
             </div>
             <div className="categoryNav">
             <Link to="/onlinestore">Home</Link>

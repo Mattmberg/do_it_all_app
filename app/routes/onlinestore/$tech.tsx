@@ -18,6 +18,7 @@ export default function Index() {
             <div className="mainNav">
             <Link to="/onlinestore">Logo</Link>
             <input type="text" placeholder="Search..." />
+            <Link to="/onlinestore/checkout">Checkout</Link>
             </div>
             <div className="categoryNav">
             <Link to="/onlinestore">Home</Link>
