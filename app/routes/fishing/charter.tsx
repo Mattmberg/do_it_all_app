@@ -21,6 +21,7 @@ export default function Index() {
             <Link to="/fishing/charter">Charter Rates/Information</Link>
             <Link to="/fishing/testimonials">Testimonials</Link>
             <Link to="/fishing/about-fishing">About Us</Link>
+            <Link to="/fishing/newsletter">Newsletter</Link>
             </div>
         </header>
         <div className="content">

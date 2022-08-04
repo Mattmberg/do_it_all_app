@@ -3,7 +3,7 @@ import type {
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
 
-import stylesUrl from "~/styles/fishing.css";
+import stylesUrl from "~/styles/about-fishing.css";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
@@ -11,7 +11,7 @@ export const links: LinksFunction = () => {
 
 export default function Index() {
     return (
-      <div className="container" style={ { backgroundImage: "url('./assets/fish_background.jpg')" } }>
+      <div className="container">
         <header>
             <div className="logoLink">
             <Link to="/fishing">Logo</Link>
@@ -24,8 +24,24 @@ export default function Index() {
             <Link to="/fishing/newsletter">Newsletter</Link>
             </div>
         </header>
-        <div className="content">
+        <div className="content">    
+            <form>
+                <div className="formContainer">
+                    <h2>Subscribe to our Newsletter!</h2>
+                </div>
 
+                <div className="formContainer">
+                    <input type="text" placeholder="Name" name="name" required/>
+                    <input type="text" placeholder="Emai Address" name="mail" required/>
+                </div>
+                <label>
+                    <input type="checkbox" name="subscribe"/>Monthly Newsletter
+                </label>
+
+                <div className="formContainer">
+                    <input type="submit" value="Subscribe"/>
+                </div>
+            </form>
         </div>
         <footer>
             <div className="footerLinks">
