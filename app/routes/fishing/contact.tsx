@@ -3,7 +3,7 @@ import type {
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
 
-import stylesUrl from "~/styles/newsletter.css";
+import stylesUrl from "~/styles/fishing.css";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
@@ -25,24 +25,8 @@ export default function Index() {
             <Link to="/fishing/contact">Contact Us</Link>
             </div>
         </header>
-        <div className="content">    
-            <form>
-                <div className="formContainer">
-                    <h2>Subscribe to our Newsletter!</h2>
-                </div>
+        <div className="content">
 
-                <div className="formContainer">
-                    <input type="text" placeholder="Name" name="name" required/>
-                    <input type="text" placeholder="Emai Address" name="mail" required/>
-                </div>
-                <label>
-                    <input type="checkbox" name="subscribe"/>Monthly Newsletter
-                </label>
-
-                <div className="formContainer">
-                    <input type="submit" value="Subscribe"/>
-                </div>
-            </form>
         </div>
         <footer>
             <div className="footerLinks">

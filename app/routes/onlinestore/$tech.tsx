@@ -19,6 +19,7 @@ export default function Index() {
             <Link to="/onlinestore">Logo</Link>
             <input type="text" placeholder="Search..." />
             <Link to="/onlinestore/checkout">Checkout</Link>
+            <Link to="/onlinestore/contact">Contact Us</Link>
             </div>
             <div className="categoryNav">
             <Link to="/onlinestore">Home</Link>

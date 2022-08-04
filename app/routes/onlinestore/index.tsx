@@ -22,6 +22,7 @@ export default function Index() {
             <button type="submit">Submit</button>
             </div>
             <Link to="/onlinestore/checkout">Checkout</Link>
+            <Link to="/onlinestore/contact">Contact Us</Link>
             </div>
             <div className="categoryNav">
             <Link to="/onlinestore">Home</Link>

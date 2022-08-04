@@ -22,6 +22,7 @@ export default function Index() {
             <Link to="/restaurant/locations">Locations</Link>
             <Link to="/restaurant/catering">Catering</Link>
             <Link to="/restaurant/careers">Careers</Link>
+            <Link to="/restaurant/contact">Contact Us</Link>
             </div>
         </header>
         <div className="content">

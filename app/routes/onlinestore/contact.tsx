@@ -2,6 +2,8 @@ import type {
     LinksFunction,
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
+import { myItems } from "~/components/data";
+import { ItemCard } from "~/components/itemcard";
 
 import stylesUrl from "~/styles/onlinestore.css";
 
@@ -15,7 +17,10 @@ export default function Index() {
         <header>
             <div className="mainNav">
             <Link to="/onlinestore">Logo</Link>
-            <input type="text" placeholder="Search..." />
+            <div className="searchContainer">
+            <input type="text" placeholder="Search..." name="search" />
+            <button type="submit">Submit</button>
+            </div>
             <Link to="/onlinestore/checkout">Checkout</Link>
             <Link to="/onlinestore/contact">Contact Us</Link>
             </div>
@@ -33,7 +38,7 @@ export default function Index() {
             </div>
         </header>
         <div className="content">
-
+            
         </div>
         <footer>
             <div className="footerLinks">

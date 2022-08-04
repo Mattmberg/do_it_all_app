@@ -23,6 +23,7 @@ export default function Index() {
             <Link to="/fishing/testimonials">Testimonials</Link>
             <Link to="/fishing/about-fishing">About Us</Link>
             <Link to="/fishing/newsletter">Newsletter</Link>
+            <Link to="/fishing/contact">Contact Us</Link>
             </div>
         </header>
         <div className="content">
