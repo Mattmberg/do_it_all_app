@@ -3,7 +3,7 @@ import type {
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
 
-import stylesUrl from "~/styles/about-fishing.css";
+import stylesUrl from "~/styles/newsletter.css";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
