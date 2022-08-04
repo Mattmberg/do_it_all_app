@@ -8,6 +8,13 @@ import {
   ScrollRestoration,
   useCatch
 } from "remix";
+import { LinksFunction } from "@remix-run/cloudflare";
+
+import stylesUrl from "~/styles/global.css";
+
+export const links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: stylesUrl, }];
+};
 
 // https://remix.run/api/conventions#default-export
 // https://remix.run/api/conventions#route-filenames

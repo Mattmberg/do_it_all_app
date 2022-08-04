@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: calc(100vh - env(safe-area-inset-bottom));
+  }
+
+  .container {
+    --gutter: 16px;
+    width: 1024px;
+    max-width: calc(100% - var(--gutter) * 2);
+    margin-right: auto;
+    margin-left: auto;
+  }
