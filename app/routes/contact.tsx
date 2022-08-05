@@ -13,38 +13,39 @@ import { useState } from "react";
     return [{ rel: "stylesheet", href: stylesUrl, }];
   };
 
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    to_name: '',
+    message: '',
+    reply_to: '',
+  });
+
+  const serviceID = 'service_fdu03pi';
+  const templateID = 'template_2ybg5d4';
+  const userID = process.env.USER_ID;
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send(
+      serviceID,
+      templateID,
+      toSend,
+      userID,
+    )
+    .then((response) => {
+      console.log('Success!', response.status, response.text);
+    })
+    .catch((err) => {
+      console.log('Failed...', err);
+    })
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value })
+  }
+  
   export default function Index() {
 
-    const [toSend, setToSend] = useState({
-      from_name: '',
-      to_name: '',
-      message: '',
-      reply_to: '',
-    });
-  
-    const serviceID = 'service_fdu03pi';
-    const templateID = 'template_2ybg5d4';
-    const userID = process.env.USER_ID;
-  
-    const onSubmit = (e) => {
-      e.preventDefault();
-      send(
-        serviceID,
-        templateID,
-        toSend,
-        userID,
-      )
-      .then((response) => {
-        console.log('Success!', response.status, response.text);
-      })
-      .catch((err) => {
-        console.log('Failed...', err);
-      })
-    };
-  
-    const handleChange = (e) => {
-      setToSend({ ...toSend, [e.target.name]: e.target.value })
-    }
 
     return (
       <div className="container">
