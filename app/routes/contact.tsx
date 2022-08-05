@@ -6,12 +6,46 @@ import type {
   import { NavCard } from "~/types";
   import { NavCardList } from "~/components/navcard";
   import { Link } from "@remix-run/react";
-  
+import { send } from "emailjs-com";
+import { useState } from "react";
+
   export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
   };
-  
+
   export default function Index() {
+
+    const [toSend, setToSend] = useState({
+      from_name: '',
+      to_name: '',
+      message: '',
+      reply_to: '',
+    });
+  
+    const serviceID = 'service_fdu03pi';
+    const templateID = 'template_2ybg5d4';
+    const userID = process.env.USER_ID;
+  
+    const onSubmit = (e) => {
+      e.preventDefault();
+      send(
+        serviceID,
+        templateID,
+        toSend,
+        userID,
+      )
+      .then((response) => {
+        console.log('Success!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('Failed...', err);
+      })
+    };
+  
+    const handleChange = (e) => {
+      setToSend({ ...toSend, [e.target.name]: e.target.value })
+    }
+
     return (
       <div className="container">
         <header>
@@ -46,11 +80,15 @@ import type {
             </nav>
           </div>
         </header>
-            <div className="cardcomponentgrid">
-              {myNavCards.map(navcards => {
-                  return <NavCardList key={navcards.id} {...navcards} />;    
-              })}
-            </div>
+            <main>
+              <form onSubmit={onSubmit}>
+                <input type="text" name="from_name" placeholder="Your Name" value={toSend.from_name} onChange={handleChange}/>
+                <input type="text" name="to_name" placeholder="To Me" value={toSend.to_name} onChange={handleChange}/>
+                <input type="text" name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange}/>
+                <input type="text" name="reply_to" placeholder="Your Email" value={toSend.reply_to} onChange={handleChange}/>
+                <button type="submit">Submit</button>
+              </form>
+            </main>
           <footer>
             <div>
               <p>&copy; Me</p>
