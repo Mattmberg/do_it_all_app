@@ -6,8 +6,8 @@ import type {
   import { NavCard } from "~/types";
   import { NavCardList } from "~/components/navcard";
   import { Link } from "@remix-run/react";
-import { send } from "emailjs-com";
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
   export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
@@ -26,7 +26,7 @@ import { useState } from "react";
 
   const onSubmit = (e) => {
     e.preventDefault();
-    send(
+    emailjs.send(
       serviceID,
       templateID,
       toSend,
@@ -43,7 +43,7 @@ import { useState } from "react";
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value })
   }
-  
+
   export default function Index() {
 
 
