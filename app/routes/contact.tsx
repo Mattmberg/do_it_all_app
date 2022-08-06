@@ -25,10 +25,10 @@ import { send } from 'emailjs-com';
       e.preventDefault();
 
       send(
-        "serviceID",
-        "templateID",
+        'service_fdu03pi',
+        'template_2ybg5d4',
         toSend,
-        "userID",
+        '-bdoVPp3_HUK1vxkp',
       )
       .then((response) => {
         console.log('Success!', response.status, response.text);
