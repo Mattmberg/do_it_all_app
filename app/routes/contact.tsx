@@ -7,23 +7,27 @@ import type {
   import { NavCardList } from "~/components/navcard";
   import { Link } from "@remix-run/react";
 import React, { useState, useRef } from "react";
-import emailjs from 'emailjs-com';
+import { send } from 'emailjs-com';
 
   export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
   };
 
   export default function Index() {
-    const form = useRef();
+    const [toSend, setToSend] = useState({
+      from_name: '',
+      to_name: '',
+      message: '',
+      reply_to: '',
+    });
 
-    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-
+    const onSubmit = (e) => {
       e.preventDefault();
 
-      emailjs.sendForm(
+      send(
         "serviceID",
         "templateID",
-        e.currentTarget,
+        toSend,
         "userID",
       )
       .then((response) => {
@@ -32,7 +36,10 @@ import emailjs from 'emailjs-com';
       .catch((err) => {
         console.log('Failed...', err);
       });
-      e.currentTarget.reset();
+    };
+
+    const handleChange = (e) => {
+      setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
 
     return (
@@ -70,12 +77,12 @@ import emailjs from 'emailjs-com';
           </div>
         </header>
             <main>
-              <form onSubmit={sendEmail}>
-                <input type="text" name="from_name" placeholder="Your Name"/>
-                <input type="text" name="to_name" placeholder="To Me"/>
-                <input type="text" name="message" placeholder="Your Message"/>
-                <input type="text" name="reply_to" placeholder="Your Email"/>
-                <button type="submit" value="Send">Submit</button>
+              <form onSubmit={onSubmit}>
+                <input type="text" name="from_name" placeholder="Your Name" value={toSend.from_name} onChange={handleChange}/>
+                <input type="text" name="to_name" placeholder="To Me" value={toSend.to_name} onChange={handleChange}/>
+                <input type="text" name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange}/>
+                <input type="text" name="reply_to" placeholder="Your Email" value={toSend.reply_to} onChange={handleChange}/>
+                <button type="submit">Submit</button>
               </form>
             </main>
           <footer>
