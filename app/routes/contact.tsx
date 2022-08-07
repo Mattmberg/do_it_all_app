@@ -1,7 +1,7 @@
 import type {
     LinksFunction,
   } from "@remix-run/cloudflare";
-  import stylesUrl from "~/styles/index.css";
+  import stylesUrl from "~/styles/contact.css";
   import { myNavCards } from "~/components/data";
   import { NavCard } from "~/types";
   import { NavCardList } from "~/components/navcard";
@@ -16,7 +16,7 @@ import { send } from 'emailjs-com';
   export default function Index() {
     const [toSend, setToSend] = useState({
       from_name: '',
-      to_name: '',
+      to_name: 'Matthew Bergeron Jr.',
       message: '',
       reply_to: '',
     });
@@ -79,8 +79,8 @@ import { send } from 'emailjs-com';
             <main>
               <form onSubmit={onSubmit}>
                 <input type="text" name="from_name" placeholder="Your Name" value={toSend.from_name} onChange={handleChange}/>
-                <input type="text" name="to_name" placeholder="To Me" value={toSend.to_name} onChange={handleChange}/>
-                <input type="text" name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange}/>
+                <input type="hidden" name="to_name" placeholder="To Me" value={toSend.to_name} onChange={handleChange}/>
+                <textarea name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange} style={{height:"200px"}}/>
                 <input type="text" name="reply_to" placeholder="Your Email" value={toSend.reply_to} onChange={handleChange}/>
                 <button type="submit">Submit</button>
               </form>
