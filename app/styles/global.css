@@ -1,4 +1,5 @@
 .remix-app, .remix-app__main, .remix-app__main-content {
   height: 100% !important;
   width: 100% !important;
+  margin: 0;
 }

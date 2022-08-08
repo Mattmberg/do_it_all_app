@@ -78,17 +78,15 @@ import { send } from 'emailjs-com';
         </header>
             <main>
               <form onSubmit={onSubmit}>
-                <input type="text" name="from_name" placeholder="Your Name" value={toSend.from_name} onChange={handleChange}/>
+                <input type="text" name="from_name" placeholder="Your Name" value={toSend.from_name} onChange={handleChange} required/>
                 <input type="hidden" name="to_name" placeholder="To Me" value={toSend.to_name} onChange={handleChange}/>
-                <textarea name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange} style={{height:"200px"}}/>
-                <input type="text" name="reply_to" placeholder="Your Email" value={toSend.reply_to} onChange={handleChange}/>
+                <textarea name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange} style={{height:"200px"}} required/>
+                <input type="text" name="reply_to" placeholder="Your Email" value={toSend.reply_to} onChange={handleChange} required/>
                 <button type="submit">Submit</button>
               </form>
             </main>
           <footer>
-            <div>
               <p>&copy; Me</p>
-            </div>
         </footer>
       </div>
     );
