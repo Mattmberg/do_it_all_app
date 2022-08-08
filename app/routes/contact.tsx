@@ -77,6 +77,10 @@ import { send } from 'emailjs-com';
           </div>
         </header>
             <main>
+              <h1>Contact Me</h1>
+
+              <p>Feel free to reach out to me- I am always looking forward to starting new projects and looking for side work/part time work in the evenings during the work week.</p>
+
               <form onSubmit={onSubmit}>
                 <input type="text" name="from_name" placeholder="Your Name" value={toSend.from_name} onChange={handleChange} required/>
                 <input type="hidden" name="to_name" placeholder="To Me" value={toSend.to_name} onChange={handleChange}/>

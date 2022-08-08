@@ -25,9 +25,19 @@ export default function Index() {
             <Link to="/restaurant/contact">Contact Us</Link>
             </div>
         </header>
-        <div className="content">
+        <main>
+              <h1>Contact Us</h1>
 
-        </div>
+              <p>If you have any comments, concerns, or suggestions- feel free to email us here or call our help line at xxx-xxx-xxxx</p>
+
+              <form>
+                <input type="text" name="from_name" placeholder="Your Name" required/>
+                <input type="hidden" name="to_name" placeholder="To Me"/>
+                <textarea name="message" placeholder="Your Message" style={{height:"200px"}} required/>
+                <input type="text" name="reply_to" placeholder="Your Email" required/>
+                <button type="submit" disabled>Submit</button>
+              </form>
+            </main>
         <footer>
             <div className="footerLinks">
                 <p>Facebook Twitter Instagram Icon Spots - Everything on this page is demo only.</p>

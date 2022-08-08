@@ -37,9 +37,19 @@ export default function Index() {
             <Link to="/onlinestore/food">Food</Link>
             </div>
         </header>
-        <div className="content">
-            
-        </div>
+        <main>
+              <h1>Contact Me</h1>
+
+              <p>Feel free to reach out to me- I am always looking forward to starting new projects and looking for side work/part time work in the evenings during the work week.</p>
+
+              <form>
+                <input type="text" name="from_name" placeholder="Your Name" required/>
+                <input type="hidden" name="to_name" placeholder="To Me"/>
+                <textarea name="message" placeholder="Your Message" style={{height:"200px"}} required/>
+                <input type="text" name="reply_to" placeholder="Your Email" required/>
+                <button type="submit">Submit</button>
+              </form>
+            </main>
         <footer>
             <div className="footerLinks">
                 <p>Facebook Twitter Instagram Icon Spots - Everything on this page is demo only.</p>

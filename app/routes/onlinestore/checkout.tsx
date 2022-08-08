@@ -99,7 +99,7 @@ export default function Index() {
         <label>
           <input type="checkbox" name="sameadr" /> Shipping address same as billing
         </label>
-        <input type="submit" value="Continue to checkout" className="btn" />
+        <input type="submit" value="Continue to checkout" className="btn" disabled/>
       </form>
     </div>
   </div>
