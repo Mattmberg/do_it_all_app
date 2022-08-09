@@ -2,6 +2,7 @@ import type {
   LinksFunction,
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
+import Chart from "~/components/chart";
 
 import stylesUrl from "~/styles/budgets.css";
 
@@ -46,6 +47,8 @@ export default function Index() {
       </header>
         <div className="content">
           <h1>Budget Tracking</h1>
+
+          <Chart />
         </div>
         <footer>
         <div>
