@@ -1,5 +1,6 @@
 import { Line } from "react-chartjs-2";
-import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js";
+Chart.register(CategoryScale)
 
 const data = {
     labels: ["January", "February", "March", "April", "May", "June"],
@@ -20,7 +21,7 @@ const data = {
     ]
 };
 
-const LineChart = () => {
+const Chart = () => {
 
     return (
         <div>
@@ -29,4 +30,4 @@ const LineChart = () => {
     )
 }
 
-export default LineChart;
+export default Chart;
