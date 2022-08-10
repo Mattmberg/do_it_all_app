@@ -48,7 +48,6 @@ export default function Index() {
         <div className="content">
           <h1>Budget Tracking</h1>
 
-          <Chart />
         </div>
         <footer>
         <div>
