@@ -12,20 +12,26 @@ export const links: LinksFunction = () => {
 
 export default function Index() {
 
-  const [toAdd, setToAdd] = useState({
+  const [amount, setAmount] = useState({
     target_amount: 0,
     monthly_savings: 0,
+  });
+
+  const [sum, setSum] = useState({
     months_to_goal: 0,
   });
+  const [submit, submitted] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
-
-    toAdd.months_to_goal = toAdd.target_amount / toAdd.monthly_savings
+    setSum({
+      months_to_goal: amount.target_amount / amount.monthly_savings
+    });
+    submitted(true);
   };
 
   const handleChange = (e) => {
-    setToAdd({ ...toAdd, [e.target.name]: e.target.value });
+    setAmount({ ...amount, [e.target.name]: e.target.value });
   };
 
 
@@ -68,14 +74,14 @@ export default function Index() {
           <div>
             <form onSubmit={onSubmit}>
                 <label htmlFor="target_amount">What is your target goal you are looking to hit?</label>
-                <input type="number" name="target_amount" placeholder="Your Target Price" value={toAdd.target_amount} onChange={handleChange} required/>
+                <input type="number" name="target_amount" placeholder="Your Target Price" value={amount.target_amount} onChange={handleChange} required/>
                 <label htmlFor="monthly_savings">How much will you be putting away per month to achieve the desired amount?</label>
-                <input type="number" name="monthly_savings" placeholder="Your Monthly Savings Toward Goal" value={toAdd.monthly_savings} onChange={handleChange}/>
+                <input type="number" name="monthly_savings" placeholder="Your Monthly Savings Toward Goal" value={amount.monthly_savings} onChange={handleChange}/>
                 <button type="submit">Add Together</button>
             </form>
           </div>
           <div>
-            <p>It will take you about {toAdd.months_to_goal} months to hit your goal.</p>
+            <p>It will take you about {sum.months_to_goal} months to hit your goal.</p>
           </div>
         </div>
         <footer>
