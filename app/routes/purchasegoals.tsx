@@ -73,10 +73,10 @@ export default function Index() {
           <h1>Purchasing Goal Calculator</h1>
           <div>
             <form onSubmit={onSubmit}>
-                <label htmlFor="target_amount">What is your target goal you are looking to hit?</label>
-                <input type="number" name="target_amount" placeholder="Your Target Price" value={amount.target_amount} onChange={handleChange} required/>
-                <label htmlFor="monthly_savings">How much will you be putting away per month to achieve the desired amount?</label>
-                <input type="number" name="monthly_savings" placeholder="Your Monthly Savings Toward Goal" value={amount.monthly_savings} onChange={handleChange}/>
+                <label htmlFor="target_amount">What is your target goal you are looking to hit?</label><br/>
+                <input type="number" name="target_amount" placeholder="Your Target Price" value={amount.target_amount} onChange={handleChange} required/><br/><br/>
+                <label htmlFor="monthly_savings">How much will you be putting away per month to achieve the desired amount?</label><br/>
+                <input type="number" name="monthly_savings" placeholder="Your Monthly Savings Toward Goal" value={amount.monthly_savings} onChange={handleChange}/><br/><br/>
                 <button type="submit">Add Together</button>
             </form>
           </div>
