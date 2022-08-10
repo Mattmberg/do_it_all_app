@@ -76,10 +76,10 @@ export default function Index() {
                 <input type="number" name="net_income" placeholder="Your Target Price" value={amount.net_income} onChange={handleChange} required/><br/><br/>
                 <label htmlFor="expenses">What is your total expense amount?</label><br/>
                 <input type="number" name="expenses" placeholder="Your Monthly Savings Toward Goal" value={amount.expenses} onChange={handleChange}/><br/><br/>
-                <button type="submit">Add Together</button>
+                <button type="submit">Calculate Spending Amount</button>
             </form>
             <div>
-            <p>You will have {sum.left_over_amount} left to spend after your expenses.</p>
+            <p>You will have ${sum.left_over_amount} dollars left to spend after your expenses.</p>
           </div>
           </div>
         </div>
