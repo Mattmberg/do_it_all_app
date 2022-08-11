@@ -40,6 +40,7 @@ export default function Index() {
 
   const handleChange = (e) => {
     setAmount({ ...amount, [e.target.name]: e.target.value });
+    setExpense({ ...expense, [e.target.name]: e.target.value });
   };
 
     return (
