@@ -83,13 +83,13 @@ export default function Index() {
                 <label htmlFor="net_income">What is your net income?</label><br/>
                 <input type="number" name="net_income" placeholder="Your Net Income" value={amount.net_income} onChange={handleChange} required/><br/><br/>
                 <label htmlFor="entertainment_expense">How much do you spend on entertainment per month?</label><br/>
-                <input type="number" name="entertainment_expense" placeholder="Entertainment Expense" value={amount.net_income} onChange={handleChange} required/><br/><br/>
+                <input type="number" name="entertainment_expense" placeholder="Entertainment Expense" value={expense.entertainment_expense} onChange={handleChange} required/><br/><br/>
                 <label htmlFor="utility_expense">How much do you spend on utilities per month?</label><br/>
-                <input type="number" name="utility_expense" placeholder="Utility Expense" value={amount.net_income} onChange={handleChange} required/><br/><br/>
+                <input type="number" name="utility_expense" placeholder="Utility Expense" value={expense.utility_expense} onChange={handleChange} required/><br/><br/>
                 <label htmlFor="housing_expense">How much do you spend on housing per month?</label><br/>
-                <input type="number" name="housing_expense" placeholder="Housing Expense" value={amount.net_income} onChange={handleChange} required/><br/><br/>
+                <input type="number" name="housing_expense" placeholder="Housing Expense" value={expense.housing_expense} onChange={handleChange} required/><br/><br/>
                 <label htmlFor="food_expense">How much do you spend on food per month?</label><br/>
-                <input type="number" name="food_expense" placeholder="Food Expense" value={amount.net_income} onChange={handleChange} required/><br/><br/>
+                <input type="number" name="food_expense" placeholder="Food Expense" value={expense.food_expense} onChange={handleChange} required/><br/><br/>
                 <button type="submit">Calculate Spending Amount</button>
             </form>
             <div>
