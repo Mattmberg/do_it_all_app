@@ -35,9 +35,6 @@ export default function Index() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setExpenses({
-      expenses: expense.entertainment_expense + expense.utility_expense + expense.housing_expense + expense.food_expense,
-    });
     setSum({
       left_over_amount: amount.net_income - expenses.expenses,
     });
@@ -47,6 +44,7 @@ export default function Index() {
   const handleChange = (e) => {
     setAmount({ ...amount, [e.target.name]: e.target.value });
     setExpense({ ...expense, [e.target.name]: e.target.value });
+    setExpenses({ expenses: expense.entertainment_expense + expense.utility_expense + expense.housing_expense + expense.food_expense });
   };
 
     return (
