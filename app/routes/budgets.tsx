@@ -23,17 +23,23 @@ export default function Index() {
     food_expense: 0,
   })
 
-  const [sum, setSum] = useState({
+  const [expenses, setExpenses] = useState({
     expenses: 0,
+  })
+
+  const [sum, setSum] = useState({
     left_over_amount: 0,
   });
+
   const [submit, submitted] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setSum({
+    setExpenses({
       expenses: expense.entertainment_expense + expense.utility_expense + expense.housing_expense + expense.food_expense,
-      left_over_amount: amount.net_income - sum.expenses,
+    });
+    setSum({
+      left_over_amount: amount.net_income - expenses.expenses,
     });
     submitted(true);
   };
