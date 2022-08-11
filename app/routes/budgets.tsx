@@ -14,10 +14,17 @@ export default function Index() {
 
   const [amount, setAmount] = useState({
     net_income: 0,
-    expenses: 0,
   });
 
+  const [expense, setExpense] = useState({
+    entertainment_expense: 0,
+    utility_expense: 0,
+    housing_expense: 0,
+    food_expense: 0,
+  })
+
   const [sum, setSum] = useState({
+    expenses: 0,
     left_over_amount: 0,
   });
   const [submit, submitted] = useState(false);
@@ -25,7 +32,8 @@ export default function Index() {
   const onSubmit = (e) => {
     e.preventDefault();
     setSum({
-      left_over_amount: amount.net_income -  amount.expenses
+      expenses: expense.entertainment_expense + expense.utility_expense + expense.housing_expense + expense.food_expense,
+      left_over_amount: amount.net_income - sum.expenses,
     });
     submitted(true);
   };
@@ -73,9 +81,15 @@ export default function Index() {
           <div>
             <form onSubmit={onSubmit}>
                 <label htmlFor="net_income">What is your net income?</label><br/>
-                <input type="number" name="net_income" placeholder="Your Target Price" value={amount.net_income} onChange={handleChange} required/><br/><br/>
-                <label htmlFor="expenses">What is your total expense amount?</label><br/>
-                <input type="number" name="expenses" placeholder="Your Monthly Savings Toward Goal" value={amount.expenses} onChange={handleChange}/><br/><br/>
+                <input type="number" name="net_income" placeholder="Your Net Income" value={amount.net_income} onChange={handleChange} required/><br/><br/>
+                <label htmlFor="entertainment_expense">How much do you spend on entertainment per month?</label><br/>
+                <input type="number" name="entertainment_expense" placeholder="Entertainment Expense" value={amount.net_income} onChange={handleChange} required/><br/><br/>
+                <label htmlFor="utility_expense">How much do you spend on utilities per month?</label><br/>
+                <input type="number" name="utility_expense" placeholder="Utility Expense" value={amount.net_income} onChange={handleChange} required/><br/><br/>
+                <label htmlFor="housing_expense">How much do you spend on housing per month?</label><br/>
+                <input type="number" name="housing_expense" placeholder="Housing Expense" value={amount.net_income} onChange={handleChange} required/><br/><br/>
+                <label htmlFor="food_expense">How much do you spend on food per month?</label><br/>
+                <input type="number" name="food_expense" placeholder="Food Expense" value={amount.net_income} onChange={handleChange} required/><br/><br/>
                 <button type="submit">Calculate Spending Amount</button>
             </form>
             <div>
