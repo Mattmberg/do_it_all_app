@@ -3,3 +3,9 @@
   width: 100% !important;
   margin: 0;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
