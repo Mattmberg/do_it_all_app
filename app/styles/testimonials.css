@@ -70,11 +70,11 @@ header a {
 footer {
     font-size: 18px;
     color: black;
-    text-decoration-style: wavy;
     background-color: aliceblue;
     background: rgb(88, 88, 88);
     background-size: cover;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-top: 1px solid var(--color-border);
     text-align: center;
     height: 45px;

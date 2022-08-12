@@ -130,3 +130,22 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  footer {
+    font-size: 18px;
+    color: black;
+    background-color: aliceblue;
+    background: rgb(88, 88, 88);
+    background-size: cover;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footerLinks {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}

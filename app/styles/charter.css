@@ -57,7 +57,7 @@ li {
 footer {
     font-size: 18px;
     color: black;
-    text-decoration-style: wavy;
+    background-color: aliceblue;
     background: rgb(88, 88, 88);
     background-size: cover;
     border-top: 1px solid var(--color-border);

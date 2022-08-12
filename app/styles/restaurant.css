@@ -39,11 +39,11 @@ header li {
 footer {
     font-size: 18px;
     color: black;
-    text-decoration-style: wavy;
     background-color: aliceblue;
     background: rgb(204, 204, 204, 0.125);
     background-size: cover;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: center;
     height: 41px;
     display: flex;
