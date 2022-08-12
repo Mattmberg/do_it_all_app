@@ -14,7 +14,7 @@ export const RecipeCardList = ({ id, title, description, ingredients}: Recipe) =
     const listItems = ingredients.map((ingredient) => <li>{ingredient}</li>)
     return (
     <Tilt>
-        <div className ="cardwrapper">
+        <div className ="cardwrapper" draggable="true">
             <div className="cardtextwrapper">
                 <h2 className="cardtexttitle">{title}</h2>
                 <p className="cardtextbody">
