@@ -60,6 +60,8 @@ footer {
 .container {
     height: 100% !important;
     width: 100% !important;
+    position: relative;
+    min-height: 100vh;
     display: grid;
     background-color: #0C2D48;
 }
