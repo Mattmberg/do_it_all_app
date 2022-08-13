@@ -6,12 +6,27 @@ import { RecipeCardList } from "~/components/recipecard";
 import { Link } from "@remix-run/react";
 
 import stylesUrl from "~/styles/recipes.css";
+import React from "react";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl, }];
 };
 
 export default function Index() {
+
+  const handleDragStart = (event: React.DragEvent<HTMLDivElement>) => {
+    event.dataTransfer.setData('text', event.currentTarget.id);
+  }
+
+  const enableDropping = (event: React.DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
+  }
+
+  const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
+    const id = event.dataTransfer.getData('text');
+    console.log(`Someone dropped an elemenf with id: ${id}`);
+  }
+
     return (
       <div className="container">
         <header className="remix-app__header">
@@ -51,6 +66,132 @@ export default function Index() {
               {myRecipes.map(recipe => {
                   return <RecipeCardList key={recipe.id} {...recipe} />;    
               })}
+          </div>
+          <div>
+            <h3>Sunday</h3>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Breakfast</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Morning Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Lunch</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Afternoon Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Dinner</u>
+            </div>
+          </div>
+          <div>
+            <h3>Monday</h3>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Breakfast</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Morning Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Lunch</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Afternoon Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Dinner</u>
+            </div>
+          </div>
+          <div>
+          <h3>Tuesday</h3>
+          <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Breakfast</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Morning Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Lunch</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Afternoon Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Dinner</u>
+            </div>
+            </div>
+          <div>
+          <h3>Wednesday</h3>
+          <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Breakfast</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Morning Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Lunch</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Afternoon Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Dinner</u>
+            </div>
+            </div>
+          <div>
+          <h3>Thursday</h3>
+          <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Breakfast</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Morning Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Lunch</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Afternoon Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Dinner</u>
+            </div>
+          </div>
+          <div>
+          <h3>Friday</h3>
+          <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Breakfast</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Morning Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Lunch</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Afternoon Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Dinner</u>
+            </div>
+          </div>
+          <div>
+          <h3>Saturday</h3>
+          <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Breakfast</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Morning Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Lunch</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Afternoon Snack</u>
+            </div>
+            <div onDragOver={enableDropping} onDrop={handleDrop}>
+              <u>Dinner</u>
+            </div>
           </div>
           <footer>
         <div>
