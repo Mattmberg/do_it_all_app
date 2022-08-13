@@ -67,132 +67,95 @@ export default function Index() {
                   return <RecipeCardList key={recipe.id} {...recipe} />;    
               })}
           </div>
-          <div>
-            <h3>Sunday</h3>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Breakfast</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Morning Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Lunch</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Afternoon Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Dinner</u>
-            </div>
-          </div>
-          <div>
-            <h3>Monday</h3>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Breakfast</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Morning Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Lunch</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Afternoon Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Dinner</u>
-            </div>
-          </div>
-          <div>
-          <h3>Tuesday</h3>
-          <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Breakfast</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Morning Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Lunch</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Afternoon Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Dinner</u>
-            </div>
-            </div>
-          <div>
-          <h3>Wednesday</h3>
-          <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Breakfast</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Morning Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Lunch</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Afternoon Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Dinner</u>
-            </div>
-            </div>
-          <div>
-          <h3>Thursday</h3>
-          <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Breakfast</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Morning Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Lunch</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Afternoon Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Dinner</u>
-            </div>
-          </div>
-          <div>
-          <h3>Friday</h3>
-          <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Breakfast</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Morning Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Lunch</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Afternoon Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Dinner</u>
-            </div>
-          </div>
-          <div>
-          <h3>Saturday</h3>
-          <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Breakfast</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Morning Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Lunch</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Afternoon Snack</u>
-            </div>
-            <div onDragOver={enableDropping} onDrop={handleDrop}>
-              <u>Dinner</u>
-            </div>
-          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+              </tr>
+              <tr>
+                <th>Breakfast</th>
+                <th>Morning Snack</th>
+                <th>Lunch</th>
+                <th>Afternoon Snack</th>
+                <th>Dinner</th>
+                <th>Breakfast</th>
+                <th>Morning Snack</th>
+                <th>Lunch</th>
+                <th>Afternoon Snack</th>
+                <th>Dinner</th>
+                <th>Breakfast</th>
+                <th>Morning Snack</th>
+                <th>Lunch</th>
+                <th>Afternoon Snack</th>
+                <th>Dinner</th>
+                <th>Breakfast</th>
+                <th>Morning Snack</th>
+                <th>Lunch</th>
+                <th>Afternoon Snack</th>
+                <th>Dinner</th>
+                <th>Breakfast</th>
+                <th>Morning Snack</th>
+                <th>Lunch</th>
+                <th>Afternoon Snack</th>
+                <th>Dinner</th>
+                <th>Breakfast</th>
+                <th>Morning Snack</th>
+                <th>Lunch</th>
+                <th>Afternoon Snack</th>
+                <th>Dinner</th>
+                <th>Breakfast</th>
+                <th>Morning Snack</th>
+                <th>Lunch</th>
+                <th>Afternoon Snack</th>
+                <th>Dinner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+                <td  onDragOver={enableDropping} onDrop={handleDrop}></td>
+              </tr>
+            </tbody>
+          </table>
           <footer>
         <div>
           <p>&copy; Me</p>
