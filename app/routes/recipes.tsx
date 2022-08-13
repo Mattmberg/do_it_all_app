@@ -70,13 +70,41 @@ export default function Index() {
           <table>
             <thead>
               <tr>
+                <th></th>
+                <th></th>
                 <th>Sunday</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th>Monday</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th>Tuesday</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th>Wednesday</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th>Thursday</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th>Friday</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th>Saturday</th>
+                <th></th>
+                <th></th>
               </tr>
               <tr>
                 <th>Breakfast</th>
