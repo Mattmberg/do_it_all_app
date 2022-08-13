@@ -308,9 +308,9 @@ export const myRecipes = [
   },
   {
     id: 22,
-    title: "Homemade Chicken Strips",
-    description: "",
-    ingredients: [],
+    title: "Homemade BBQ Chicken Tenders",
+    description: "Fantastic airfried homemade chicken tenders.",
+    ingredients: ["Chicken Tenderloins", "BBQ Sauce", "Panko Bread Crumbs", "Broccoli(Side)", "Suddenly Salad(Pasta Salad)"],
   },
 ]
 

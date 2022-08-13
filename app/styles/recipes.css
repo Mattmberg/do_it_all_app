@@ -65,18 +65,18 @@ footer {
 }
 
 .cardcomponentgrid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: auto;
     display: grid;
-    grid-gap: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
+    grid-gap: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .cardwrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 420px;
+    grid-template-rows: 400px;
     grid-template-areas: "text";
     border-radius: 18px;
     background: white;
@@ -99,19 +99,6 @@ footer {
     min-width: 0px;
     line-height: 1.2;
     margin: 0px;
-    background: linear-gradient(
-        110.78deg,
-        rgb(118, 230, 80) -1.13%,
-        rgb(249, 214, 73) 15.22%,
-        rgb(240, 142, 53) 32.09%,
-        rgb(236, 81, 87) 48.96%,
-        rgb(255, 24, 189) 67.94%,
-        rgb(26, 75, 255) 85.34%,
-        rgb(98, 216, 249) 99.57%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
 .cardtextbody {
