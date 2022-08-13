@@ -72,22 +72,22 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: auto;
     display: grid;
-    grid-gap: 40px;
-    margin-left: 200px;
-    margin-right: 200px;
+    grid-gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .cardwrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 400px;
+    grid-template-rows: 350px;
     grid-template-areas: "text";
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cardtextwrapper {
