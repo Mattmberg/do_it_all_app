@@ -185,9 +185,7 @@ export default function Index() {
             </tbody>
           </table>
           <footer>
-        <div>
           <p>&copy; Me</p>
-        </div>
       </footer>
       </div>
     );
