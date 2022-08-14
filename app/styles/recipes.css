@@ -74,8 +74,10 @@ footer {
     grid-auto-rows: auto;
     display: grid;
     grid-gap: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardwrapper {
