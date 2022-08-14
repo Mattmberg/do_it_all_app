@@ -66,6 +66,7 @@ footer {
     min-height: 100vh;
     display: grid;
     background-color: #0C2D48;
+    overflow: auto;
 }
 
 .cardcomponentgrid {
