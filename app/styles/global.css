@@ -8,19 +8,6 @@
  margin: 0;
 }
 
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-header a {
-  overflow: hidden;
-  display: block;
-  padding: 14px 16px;
-}
-
-
 footer {
   position: absolute;
   bottom: 0;
