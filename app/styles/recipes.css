@@ -62,11 +62,15 @@ footer {
 
 
 .container {
+    grid-template-areas: "header", "content", "footer";
+    grid-template-rows: 5% 90% 5%;
+    grid-template-columns: 1fr;
     position: relative;
     min-height: 100vh;
+    min-width: 100vw;
     display: grid;
     background-color: #0C2D48;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .cardcomponentgrid {

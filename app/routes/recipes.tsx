@@ -29,8 +29,7 @@ export default function Index() {
 
     return (
       <div className="container">
-        <header className="remix-app__header">
-        <div>
+        <header>
           <nav>
             <ul>
               <li>
@@ -59,7 +58,6 @@ export default function Index() {
               </li>
             </ul>
           </nav>
-        </div>
       </header>
           <h1>Recipes</h1>
           <div className="cardcomponentgrid">
@@ -184,9 +182,9 @@ export default function Index() {
               </tr>
             </tbody>
           </table>
-          <footer>
+        <footer>
           <p>&copy; Me</p>
-      </footer>
+        </footer>
       </div>
     );
   }
