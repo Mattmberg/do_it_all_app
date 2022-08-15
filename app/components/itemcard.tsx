@@ -12,7 +12,7 @@ export function ItemCard({ id, name, image, description, department, subDepartme
                 About this item: {description}
             </p>
             <h5>Rating: {rating}</h5>
-            <p>Price: {price}</p>
+            <p>Price: ${price}</p>
         </div>
     </div>
     );

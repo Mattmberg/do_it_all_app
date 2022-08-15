@@ -112,10 +112,8 @@ function Document({
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="remix-app">
-      <div className="remix-app__main">
-        <div className="remix-app__main-content">{children}</div>
-      </div>
+    <div>
+      {children}
     </div>
   );
 }
