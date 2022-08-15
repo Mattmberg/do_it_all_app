@@ -11,6 +11,18 @@ body, html {
     width: 100%;
 }
 
+.container {
+    grid-template-areas: "header", "content", "footer";
+    grid-template-rows: 5% 90% 5%;
+    grid-template-columns: 1fr;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    background-color: #0C2D48;
+    overflow: hidden;
+}
+
 header {
     padding-bottom: 1rem;
     font-size: 18px;
@@ -24,6 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-area: header;
 }
 
 header a {
@@ -58,19 +71,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-area: footer;
 }
 
-
-.container {
-    grid-template-areas: "header", "content", "footer";
-    grid-template-rows: 5% 90% 5%;
-    grid-template-columns: 1fr;
-    position: relative;
-    min-height: 100vh;
-    min-width: 100vw;
-    display: grid;
-    background-color: #0C2D48;
-    overflow: hidden;
+main {
+    grid-area: content;
 }
 
 .cardcomponentgrid {

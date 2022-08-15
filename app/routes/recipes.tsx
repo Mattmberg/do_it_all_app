@@ -59,6 +59,7 @@ export default function Index() {
             </ul>
           </nav>
       </header>
+      <main>
           <h1>Recipes</h1>
           <div className="cardcomponentgrid">
               {myRecipes.map(recipe => {
@@ -182,6 +183,7 @@ export default function Index() {
               </tr>
             </tbody>
           </table>
+          </main>
         <footer>
           <p>&copy; Me</p>
         </footer>
