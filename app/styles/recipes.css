@@ -36,7 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-area: header;
+    grid-area: "header";
 }
 
 header a {
@@ -71,7 +71,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: footer;
+    grid-area: "footer";
 }
 
 main {
