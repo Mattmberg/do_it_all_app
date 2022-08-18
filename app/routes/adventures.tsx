@@ -52,9 +52,7 @@ export default function Index() {
             })}
           </div>
           <footer>
-        <div>
           <p>&copy; Me</p>
-        </div>
       </footer>
     </div>
   );
