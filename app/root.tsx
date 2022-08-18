@@ -21,9 +21,7 @@ export const links: LinksFunction = () => {
 export default function App() {
   return (
     <Document>
-      <Layout>
         <Outlet />
-      </Layout>
     </Document>
   );
 }
@@ -33,7 +31,6 @@ export function ErrorBoundary({ error }: { error: Error }) {
   console.error(error);
   return (
     <Document title="Error!">
-      <Layout>
         <div>
           <h1>There was an error</h1>
           <p>{error.message}</p>
@@ -43,7 +40,6 @@ export function ErrorBoundary({ error }: { error: Error }) {
             users to see.
           </p>
         </div>
-      </Layout>
     </Document>
   );
 }
@@ -74,12 +70,10 @@ export function CatchBoundary() {
 
   return (
     <Document title={`${caught.status} ${caught.statusText}`}>
-      <Layout>
         <h1>
           {caught.status}: {caught.statusText}
         </h1>
         {message}
-      </Layout>
     </Document>
   );
 }
@@ -107,13 +101,5 @@ function Document({
         {process.env.NODE_ENV === "development" && <LiveReload />}
       </body>
     </html>
-  );
-}
-
-function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <div>
-      {children}
-    </div>
   );
 }
