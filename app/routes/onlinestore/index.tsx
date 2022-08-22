@@ -2,6 +2,7 @@ import type {
     LinksFunction,
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
+import { FaShoppingCart } from "react-icons/fa";
 import { myItems } from "~/components/data";
 import { ItemCard } from "~/components/itemcard";
 
@@ -35,6 +36,7 @@ export default function Index() {
             <Link to="/onlinestore/outdoors">Outdoors</Link>
             <Link to="/onlinestore/pets">Pets</Link>
             <Link to="/onlinestore/food">Food</Link>
+            <Link to="/onlinestore/cart"><FaShoppingCart /></Link>
             </div>
         </header>
         <div className="content">
