@@ -2,7 +2,7 @@ import type {
     LinksFunction,
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
-
+import { FaShoppingCart } from "react-icons/fa";
 import stylesUrl from "~/styles/onlinestore.css";
 import { myItems } from "~/components/data";
 import { ItemCard } from "~/components/itemcard";
@@ -16,22 +16,26 @@ export default function Index() {
       <div className="container">
         <header>
             <div className="mainNav">
-            <Link to="/onlinestore">Logo</Link>
-            <input type="text" placeholder="Search..." />
-            <Link to="/onlinestore/checkout">Checkout</Link>
-            <Link to="/onlinestore/contact">Contact Us</Link>
+                    <Link to="/onlinestore">Logo</Link>  
+                    <Link to="/onlinestore/checkout" style={{float:"right"}}>Checkout</Link>
+                    <Link to="/onlinestore/contact" style={{float:"right"}}>Contact Us</Link> 
+                <div className="searchContainer">
+                    <input type="text" placeholder="Search..." name="search" />
+                    <button type="submit">Submit</button>
+                </div>
             </div>
             <div className="categoryNav">
-            <Link to="/onlinestore">Home</Link>
-            <Link to="/onlinestore/deals">Deals</Link>
-            <Link to="/onlinestore/tech">Tech</Link>
-            <Link to="/onlinestore/health">Health</Link>
-            <Link to="/onlinestore/household">Household Goods</Link>
-            <Link to="/onlinestore/furniture">Furniture</Link>
-            <Link to="/onlinestore/clothes">Clothes</Link>
-            <Link to="/onlinestore/outdoors">Outdoors</Link>
-            <Link to="/onlinestore/pets">Pets</Link>
-            <Link to="/onlinestore/food">Food</Link>
+                    <Link to="/onlinestore">Home</Link>
+                    <Link to="/onlinestore/deals">Deals</Link>
+                    <Link to="/onlinestore/tech">Tech</Link>
+                    <Link to="/onlinestore/health">Health</Link>
+                    <Link to="/onlinestore/household">Household Goods</Link>
+                    <Link to="/onlinestore/furniture">Furniture</Link>
+                    <Link to="/onlinestore/clothes">Clothes</Link>
+                    <Link to="/onlinestore/outdoors">Outdoors</Link>
+                    <Link to="/onlinestore/pets">Pets</Link>
+                    <Link to="/onlinestore/food">Food</Link>
+                    <Link to="/onlinestore/cart" style={{float:"right"}}><FaShoppingCart /></Link>
             </div>
         </header>
         <div className="content">

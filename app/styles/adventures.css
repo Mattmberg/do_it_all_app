@@ -152,7 +152,7 @@ footer {
     grid-template-rows: 1fr;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: #145DA0;
+    background: white;
 }
 
 .cardstats {

@@ -28,35 +28,30 @@ export default function PostSlug() {
   const { pokemon } = useLoaderData() as LoaderData;
   return (
     <main className="mx-auto max-w-4xl">
-            <header>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/matthew-bergeron-jr-cs/">LinkedIn</a>
-              </li>
-              <li>
-                <a href="https://github.com/Mattmberg">GitHub</a>
-              </li>
-              <li>
-                <Link to="/pokemon">Catch a Pokemon</Link>
-              </li>
-              <li>
-                <Link to="/fishing">Charter Business Demo</Link>
-              </li>
-              <li>
-                <Link to="/onlinestore">Online Store Demo</Link>
-              </li>
-              <li>
-                <Link to="/restaurant">Restaurant Demo</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+        <header>
+            <div className="mainNav">
+                    <Link to="/onlinestore">Logo</Link>  
+                    <Link to="/onlinestore/checkout" style={{float:"right"}}>Checkout</Link>
+                    <Link to="/onlinestore/contact" style={{float:"right"}}>Contact Us</Link> 
+                <div className="searchContainer">
+                    <input type="text" placeholder="Search..." name="search" />
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            <div className="categoryNav">
+                    <Link to="/onlinestore">Home</Link>
+                    <Link to="/onlinestore/deals">Deals</Link>
+                    <Link to="/onlinestore/tech">Tech</Link>
+                    <Link to="/onlinestore/health">Health</Link>
+                    <Link to="/onlinestore/household">Household Goods</Link>
+                    <Link to="/onlinestore/furniture">Furniture</Link>
+                    <Link to="/onlinestore/clothes">Clothes</Link>
+                    <Link to="/onlinestore/outdoors">Outdoors</Link>
+                    <Link to="/onlinestore/pets">Pets</Link>
+                    <Link to="/onlinestore/food">Food</Link>
+                    <Link to="/onlinestore/cart" style={{float:"right"}}><FaShoppingCart /></Link>
+            </div>
+        </header>
       <div className="itemCard">
         <div className="cardtitle">
         <h1 className="my-6 border-b-2 text-center text-3xl">

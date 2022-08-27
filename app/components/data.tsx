@@ -339,7 +339,7 @@ export const myItems = [
   {
     id: 1,
     name: "Computer",
-    image: "",
+    image: "./assets/computer_one.jpg",
     description: "A powerful machine.",
     department: "Tech",
     subDepartment: "",
@@ -354,7 +354,7 @@ export const myItems = [
   {
     id: 2,
     name: "Vitamins",
-    image: "",
+    image: "./assets/vitamins_one.jpg",
     description: "Keep your body healthy.",
     department: "Health",
     subDepartment: "",
@@ -369,7 +369,7 @@ export const myItems = [
   {
     id: 3,
     name: "Paper Towels",
-    image: "",
+    image: "./assets/paper_towel_one.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -384,7 +384,7 @@ export const myItems = [
   {
     id: 4,
     name: "Couch",
-    image: "",
+    image: "./assets/couch_one.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -399,7 +399,7 @@ export const myItems = [
   {
     id: 5,
     name: "Shirt",
-    image: "",
+    image: "./assets/shirt_one.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -414,7 +414,7 @@ export const myItems = [
   {
     id: 6,
     name: "Tent",
-    image: "",
+    image: "./assets/tent_one.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
@@ -429,7 +429,7 @@ export const myItems = [
   {
     id: 7,
     name: "Dog Food",
-    image: "",
+    image: "./assets/dog_food_one.jpg",
     description: "Food your pet will love.",
     department: "Pets",
     subDepartment: "",
@@ -444,7 +444,7 @@ export const myItems = [
   {
     id: 8,
     name: "Apples",
-    image: "",
+    image: "./assets/apple_one.jpg",
     description: "A healthy snack.",
     department: "Food",
     subDepartment: "",
