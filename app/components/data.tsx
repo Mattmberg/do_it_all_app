@@ -654,7 +654,7 @@ export const myItems = [
   {
     id: 22,
     name: "Paper Towels",
-    image: "./assets/household_one.png",
+    image: "./assets/household_two.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -669,7 +669,7 @@ export const myItems = [
   {
     id: 23,
     name: "Paper Towels",
-    image: "./assets/household_one.png",
+    image: "./assets/household_three.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -684,7 +684,7 @@ export const myItems = [
   {
     id: 24,
     name: "Paper Towels",
-    image: "./assets/household_one.png",
+    image: "./assets/household_four.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -699,7 +699,7 @@ export const myItems = [
   {
     id: 25,
     name: "Paper Towels",
-    image: "./assets/household_one.png",
+    image: "./assets/household_five.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -714,7 +714,7 @@ export const myItems = [
   {
     id: 26,
     name: "Paper Towels",
-    image: "./assets/household_one.png",
+    image: "./assets/household_six.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -729,7 +729,7 @@ export const myItems = [
   {
     id: 27,
     name: "Paper Towels",
-    image: "./assets/household_one.png",
+    image: "./assets/household_seven.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -744,7 +744,7 @@ export const myItems = [
   {
     id: 28,
     name: "Paper Towels",
-    image: "./assets/household_one.png",
+    image: "./assets/household_eight.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -759,7 +759,7 @@ export const myItems = [
   {
     id: 29,
     name: "Paper Towels",
-    image: "./assets/household_one.png",
+    image: "./assets/household_nine.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -774,7 +774,7 @@ export const myItems = [
   {
     id: 30,
     name: "Paper Towels",
-    image: "./assets/household_one.png",
+    image: "./assets/household_ten.png",
     description: "Strong paper towels.",
     department: "Household Goods",
     subDepartment: "",
@@ -804,7 +804,7 @@ export const myItems = [
   {
     id: 32,
     name: "Couch",
-    image: "./assets/furniture_one.jpg",
+    image: "./assets/furniture_two.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -819,7 +819,7 @@ export const myItems = [
   {
     id: 33,
     name: "Couch",
-    image: "./assets/furniture_one.jpg",
+    image: "./assets/furniture_three.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -834,7 +834,7 @@ export const myItems = [
   {
     id: 34,
     name: "Couch",
-    image: "./assets/furniture_one.jpg",
+    image: "./assets/furniture_four.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -849,7 +849,7 @@ export const myItems = [
   {
     id: 35,
     name: "Couch",
-    image: "./assets/furniture_one.jpg",
+    image: "./assets/furniture_five.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -864,7 +864,7 @@ export const myItems = [
   {
     id: 36,
     name: "Couch",
-    image: "./assets/furniture_one.jpg",
+    image: "./assets/furniture_six.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -879,7 +879,7 @@ export const myItems = [
   {
     id: 37,
     name: "Couch",
-    image: "./assets/furniture_one.jpg",
+    image: "./assets/furniture_seven.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -894,7 +894,7 @@ export const myItems = [
   {
     id: 38,
     name: "Couch",
-    image: "./assets/furniture_one.jpg",
+    image: "./assets/furniture_eight.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -909,7 +909,7 @@ export const myItems = [
   {
     id: 39,
     name: "Couch",
-    image: "./assets/furniture_one.jpg",
+    image: "./assets/furniture_nine.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -924,7 +924,7 @@ export const myItems = [
   {
     id: 40,
     name: "Couch",
-    image: "./assets/furniture_one.jpg",
+    image: "./assets/furniture_ten.jpg",
     description: "A massive, comfy couch.",
     department: "Furniture",
     subDepartment: "",
@@ -954,7 +954,7 @@ export const myItems = [
   {
     id: 42,
     name: "Shirt",
-    image: "./assets/clothes_one.png",
+    image: "./assets/clothes_two.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -969,7 +969,7 @@ export const myItems = [
   {
     id: 43,
     name: "Shirt",
-    image: "./assets/clothes_one.png",
+    image: "./assets/clothes_three.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -984,7 +984,7 @@ export const myItems = [
   {
     id: 44,
     name: "Shirt",
-    image: "./assets/clothes_one.png",
+    image: "./assets/clothes_four.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -999,7 +999,7 @@ export const myItems = [
   {
     id: 45,
     name: "Shirt",
-    image: "./assets/clothes_one.png",
+    image: "./assets/clothes_five.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -1014,7 +1014,7 @@ export const myItems = [
   {
     id: 46,
     name: "Shirt",
-    image: "./assets/clothes_one.png",
+    image: "./assets/clothes_six.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -1029,7 +1029,7 @@ export const myItems = [
   {
     id: 47,
     name: "Shirt",
-    image: "./assets/clothes_one.png",
+    image: "./assets/clothes_seven.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -1044,7 +1044,7 @@ export const myItems = [
   {
     id: 48,
     name: "Shirt",
-    image: "./assets/clothes_one.png",
+    image: "./assets/clothes_eight.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -1059,7 +1059,7 @@ export const myItems = [
   {
     id: 49,
     name: "Shirt",
-    image: "./assets/clothes_one.png",
+    image: "./assets/clothes_nine.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -1074,7 +1074,7 @@ export const myItems = [
   {
     id: 50,
     name: "Shirt",
-    image: "./assets/clothes_one.png",
+    image: "./assets/clothes_ten.png",
     description: "A comfy shirt.",
     department: "Clothes",
     subDepartment: "",
@@ -1104,7 +1104,7 @@ export const myItems = [
   {
     id: 52,
     name: "Tent",
-    image: "./assets/tent_one.jpg",
+    image: "./assets/outdoors_two.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
@@ -1119,7 +1119,7 @@ export const myItems = [
   {
     id: 53,
     name: "Tent",
-    image: "./assets/tent_one.jpg",
+    image: "./assets/outdoors_three.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
@@ -1134,7 +1134,7 @@ export const myItems = [
   {
     id: 54,
     name: "Tent",
-    image: "./assets/tent_one.jpg",
+    image: "./assets/outdoors_four.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
@@ -1149,7 +1149,7 @@ export const myItems = [
   {
     id: 55,
     name: "Tent",
-    image: "./assets/tent_one.jpg",
+    image: "./assets/outdoors_five.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
@@ -1164,7 +1164,7 @@ export const myItems = [
   {
     id: 56,
     name: "Tent",
-    image: "./assets/tent_one.jpg",
+    image: "./assets/outdoors_six.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
@@ -1179,7 +1179,7 @@ export const myItems = [
   {
     id: 57,
     name: "Tent",
-    image: "./assets/tent_one.jpg",
+    image: "./assets/outdoors_seven.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
@@ -1194,7 +1194,7 @@ export const myItems = [
   {
     id: 58,
     name: "Tent",
-    image: "./assets/tent_one.jpg",
+    image: "./assets/outdoors_eight.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
@@ -1209,7 +1209,7 @@ export const myItems = [
   {
     id: 59,
     name: "Tent",
-    image: "./assets/tent_one.jpg",
+    image: "./assets/outdoors_nine.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
@@ -1224,7 +1224,7 @@ export const myItems = [
   {
     id: 60,
     name: "Tent",
-    image: "./assets/tent_one.jpg",
+    image: "./assets/outdoors_ten.jpg",
     description: "A roomy tent.",
     department: "Outdoors",
     subDepartment: "",
