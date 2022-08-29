@@ -3,6 +3,9 @@ import type {
 } from "@remix-run/cloudflare";
 import { Link } from "@remix-run/react";
 import { FaShoppingCart } from "react-icons/fa";
+import { myItems } from "~/components/data";
+import { ItemCard } from "~/components/itemcard";
+
 import stylesUrl from "~/styles/onlinestore.css";
 
 export const links: LinksFunction = () => {
@@ -32,12 +35,16 @@ export default function Index() {
                     <Link to="/onlinestore/clothes">Clothes</Link>
                     <Link to="/onlinestore/outdoors">Outdoors</Link>
                     <Link to="/onlinestore/pets">Pets</Link>
-                    <Link to="/onlinestore/food">Food</Link>
+                    <Link to="/onlinestore/foods">Food</Link>
                     <Link to="/onlinestore/cart" style={{float:"right"}}><FaShoppingCart /></Link>
             </div>
         </header>
         <div className="content">
-
+        <div className="cardcomponentgrid">
+                {myItems.filter(item => item.department == "Clothes").map(item => {
+                    return <ItemCard key={item.id} {...item} />;    
+                })}
+            </div>
         </div>
         <footer>
             <div className="footerLinks">

@@ -11,7 +11,6 @@ export function ItemCard({ id, name, image, description, department, subDepartme
     const listRatings = [...Array(rating)].map((rating) => {
         return<span><AiFillStar /></span>})
     
-    
         return (
         <div className ="cardwrapper">
         <img className="cardimage" src={image}/>

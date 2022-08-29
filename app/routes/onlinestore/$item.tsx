@@ -48,7 +48,7 @@ export default function PostSlug() {
                     <Link to="/onlinestore/clothes">Clothes</Link>
                     <Link to="/onlinestore/outdoors">Outdoors</Link>
                     <Link to="/onlinestore/pets">Pets</Link>
-                    <Link to="/onlinestore/food">Food</Link>
+                    <Link to="/onlinestore/foods">Food</Link>
                     <Link to="/onlinestore/cart" style={{float:"right"}}><FaShoppingCart /></Link>
             </div>
         </header>
