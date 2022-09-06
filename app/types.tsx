@@ -46,3 +46,9 @@ export interface ItemCards {
     rating: number;
     sale?: boolean;
 }
+
+export interface Questions {
+    id: number;
+    question: string;
+    validationType: string;
+}

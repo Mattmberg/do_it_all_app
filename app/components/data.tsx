@@ -1537,3 +1537,136 @@ export const myItems = [
     sale: false,
   },
 ]
+
+export const myDemos = [
+  {
+    id: 1,
+    title: "Aquarium",
+    description: "W.I.P",
+    image: "RiCompass3Fill",
+    navTo:"aquarium",
+  },
+  {
+    id: 2,
+    title: "Fishing",
+    description: "",
+    image: "RiCopperDiamondFill",
+    navTo:"fishing",
+  },
+  {
+    id: 3,
+    title: "Business",
+    description: "W.I.P",
+    image: "RiGlobeLine",
+    navTo:"business",
+  },
+  {
+    id: 4,
+    title: "Educational",
+    description: "W.I.P",
+    image: "RiHazeLine",
+    navTo:"educational",
+  },
+  {
+    id: 5,
+    title: "Entertainment",
+    description: "W.I.P",
+    image: "RiTreasureMapLine",
+    navTo:"entertainment",
+  },
+  {
+    id: 6,
+    title: "Event Registration",
+    description: "W.I.P",
+    image: "RiSpaceShipLine",
+    navTo:"registration", 
+  },
+  {
+    id: 7,
+    title: "Forum",
+    description: "W.I.P",
+    image: "RiStore3Fill",
+    navTo:"forum", 
+  },
+  {
+    id: 8,
+    title: "News Site",
+    description: "W.I.P",
+    image: "RiRestaurant2Fill",
+    navTo:"news", 
+  },
+  {
+    id: 9,
+    title: "Online Store",
+    description: "",
+    image: "RiShieldUserLine",
+    navTo:"onlinestore",
+
+  },
+  {
+    id: 10,
+    title: "Portal",
+    description: "W.I.P",
+    image: "RiShieldUserLine",
+    navTo:"portal",
+
+  },
+  {
+    id: 11,
+    title: "Portfolio",
+    description: "W.I.P",
+    image: "RiShieldUserLine",
+    navTo:"portfolio",
+
+  },
+  {
+    id: 12,
+    title: "Restaurant",
+    description: "W.I.P",
+    image: "RiShieldUserLine",
+    navTo:"restaurant",
+
+  },
+  {
+    id: 13,
+    title: "Science Museum",
+    description: "W.I.P",
+    image: "RiShieldUserLine",
+    navTo:"sciencemuseum",
+
+  },
+  {
+    id: 14,
+    title: "Wiki",
+    description: "W.I.P",
+    image: "RiShieldUserLine",
+    navTo:"wiki",
+
+  },
+  {
+    id: 15,
+    title: "Zoo",
+    description: "W.I.P",
+    image: "RiShieldUserLine",
+    navTo:"zoo",
+
+  },
+]
+
+export const myQuestions = [
+  {
+    id: 1,
+    question: "What is your name?",
+    validationType: "text",
+  },
+  {
+    id: 2,
+    question: "What is your name?",
+    validationType: "text",
+  },
+  {
+    id: 3,
+    question: "What is your name?",
+    validationType: "text",
+  },
+]
