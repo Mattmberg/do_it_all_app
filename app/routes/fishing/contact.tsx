@@ -25,7 +25,7 @@ export default function Index() {
             <Link to="/fishing/contact">Contact Us</Link>
             </div>
         </header>
-        <main>
+        <div className="content">
               <h1>Contact Us</h1>
 
               <p>If you have any comments, concerns, or suggestions- feel free to email us here or call our help line at xxx-xxx-xxxx</p>
@@ -37,7 +37,7 @@ export default function Index() {
                 <input type="text" name="reply_to" placeholder="Your Email" required/>
                 <button type="submit" disabled>Submit</button>
               </form>
-            </main>
+            </div>
         <footer>
             <div className="footerLinks">
                 <p>Facebook Twitter Instagram Icon Spots - Everything on this page is demo only.</p>

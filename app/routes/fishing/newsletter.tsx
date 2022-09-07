@@ -34,11 +34,8 @@ export default function Index() {
                 <div className="formContainer">
                     <input type="text" placeholder="Name" name="name" required/>
                     <input type="text" placeholder="Emai Address" name="mail" required/>
-                </div>
-                <label>
                     <input type="checkbox" name="subscribe"/>Monthly Newsletter
-                </label>
-
+                </div>
                 <div className="formContainer">
                     <input type="submit" value="Subscribe"/>
                 </div>

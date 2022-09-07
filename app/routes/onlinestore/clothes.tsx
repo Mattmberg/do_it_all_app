@@ -5,6 +5,7 @@ import { Link } from "@remix-run/react";
 import { FaShoppingCart } from "react-icons/fa";
 import { myItems } from "~/components/data";
 import { ItemCard } from "~/components/itemcard";
+import { useState } from "react";
 
 import stylesUrl from "~/styles/onlinestore.css";
 
@@ -13,6 +14,8 @@ export const links: LinksFunction = () => {
 };
 
 export default function Index() {
+    const [itemQuantity, setItemQuantity] = useState();
+
     return (
       <div className="container">
         <header>
@@ -36,7 +39,7 @@ export default function Index() {
                     <Link to="/onlinestore/outdoors">Outdoors</Link>
                     <Link to="/onlinestore/pets">Pets</Link>
                     <Link to="/onlinestore/foods">Food</Link>
-                    <Link to="/onlinestore/cart" style={{float:"right"}}><FaShoppingCart /></Link>
+                    <Link to="/onlinestore/cart" style={{float:"right"}}><FaShoppingCart />{itemQuantity}</Link>
             </div>
         </header>
         <div className="content">

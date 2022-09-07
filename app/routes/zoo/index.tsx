@@ -12,6 +12,15 @@ export default function Index() {
     return (
       <div className="container">
         <header>
+        <div>
+        <Link to="/">Home</Link>
+            <Link to="/"></Link>
+            <Link to="/"></Link>
+            <Link to="/"></Link>
+            <Link to="/"></Link>
+            <Link to="/"></Link>
+            <Link to="/"></Link>
+          </div>
         </header>
         <div className="content">
         </div>

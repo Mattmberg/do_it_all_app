@@ -1579,7 +1579,7 @@ export const myDemos = [
     title: "Event Registration",
     description: "W.I.P",
     image: "RiSpaceShipLine",
-    navTo:"registration", 
+    navTo:"event", 
   },
   {
     id: 7,

@@ -44,14 +44,25 @@ export default function Index() {
     return (
       <div className="container">
         <header>
+        <div>
+        <Link to="/">Home</Link>
+            <Link to="/demos">My Website Demos</Link>
+            <Link to="/event">Home</Link>
+            <Link to="/event/registration">Registration</Link>
+            <Link to="/event/streams">Streams</Link>
+            <Link to="/event/features">Features</Link>
+            <Link to="/event/guests">Special Guests</Link>
+            <Link to="/event/expohall">Exposition Hall</Link>
+            <Link to="/event/schedule">Schedule</Link>
+            <Link to="/event/travel">Hotel & Travel</Link>
+            <Link to="/event/info">Show Information</Link>
+            <Link to="/event/health">Health & Safety</Link>
+            <Link to="/event/merchandise">Merchandise</Link>
+          </div>
         </header>
         <div className="content">
             <Form onSubmit={handleSubmit}>
-                <input type="text" name="from_name" placeholder="Your Name" value={toSend.from_name} onChange={handleChange} required/>
-                <input type="hidden" name="to_name" placeholder="To Me" value={toSend.to_name} onChange={handleChange}/>
-                <textarea name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange} style={{height:"200px"}} required/>
-                <input type="text" name="reply_to" placeholder="Your Email" value={toSend.reply_to} onChange={handleChange} required/>
-                <button type="submit">Submit</button>
+                <button type="submit" onClick={handleClick} label="Next" disable={!answer.length}>Submit</button>
             </Form>
         </div>
         <footer>

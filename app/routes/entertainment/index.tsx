@@ -12,6 +12,15 @@ export default function Index() {
     return (
       <div className="container">
         <header>
+        <div>
+            <Link to="/">Home</Link>
+            <Link to="/demos">My Website Demos</Link>
+            <Link to="/entertainment">Logo</Link>
+            <Link to="/entertainment/tv">TV Shows</Link>
+            <Link to="/entertainment/movies">Movies</Link>
+            <Link to="/entertainment/myshows">My Shows</Link>
+            <Link to="/entertainment/account">My Account</Link>
+          </div>
         </header>
         <div className="content">
         </div>
