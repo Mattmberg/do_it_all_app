@@ -1661,12 +1661,24 @@ export const myQuestions = [
   },
   {
     id: 2,
-    question: "What is your name?",
-    validationType: "text",
+    question: "What is your favorite date?",
+    validationType: "date",
   },
   {
     id: 3,
-    question: "What is your name?",
-    validationType: "text",
+    question: "What is your favorite number?",
+    validationType: "number",
+  },
+  {
+    id: 4,
+    question: "What is your favorite type of household pet?",
+    validationType: "checkbox",
+    options: ["Dogs", "Cats", "Fish", "Bunnies", "Birds", "Lizards", "Rodents"],
+  },
+  {
+    id: 5,
+    question: "Do you accept terms and conditions?",
+    validationType: "dropdown",
+    options: ["Yes", "No"],
   },
 ]
