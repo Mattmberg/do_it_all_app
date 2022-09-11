@@ -16,7 +16,14 @@ export default function Index() {
         <Link to="/">Home</Link>
             <Link to="/"></Link>
             <Link to="/"></Link>
-            <Link to="/"></Link>
+            <div>
+              <button>Animals</button>
+              <div>
+                <Link to=""></Link>
+                <Link to=""></Link>
+                <Link to=""></Link>
+              </div>
+            </div>
             <Link to="/"></Link>
             <Link to="/"></Link>
             <Link to="/"></Link>
