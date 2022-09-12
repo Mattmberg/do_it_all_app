@@ -15,10 +15,12 @@ export default function Index() {
         <div>
         <Link to="/">Home</Link>
             <Link to="/demos"></Link>
-            <Link to="/business">Logo</Link>
-            <Link to="/business/about">About</Link>
-            <Link to="/business/services">Services</Link>
-            <Link to="/business/contact">Contact</Link>
+            <Link to="/news">Logo</Link>
+            <Link to="/news/states">U.S. News</Link>
+            <Link to="/news/world">World News</Link>
+            <Link to="/news/politics">Politics</Link>
+            <Link to="/news/technology">Technology</Link>
+            <Link to="/news/health">Health</Link>
           </div>
         </header>
         <div className="content">

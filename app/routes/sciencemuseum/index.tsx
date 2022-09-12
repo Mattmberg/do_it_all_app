@@ -14,12 +14,12 @@ export default function Index() {
         <header>
         <div>
         <Link to="/">Home</Link>
-            <Link to="/"></Link>
-            <Link to="/"></Link>
-            <Link to="/"></Link>
-            <Link to="/"></Link>
-            <Link to="/"></Link>
-            <Link to="/"></Link>
+            <Link to="/sciencemuseum">Logo</Link>
+            <Link to="/sciencemuseum/"></Link>
+            <Link to="/sciencemuseum/"></Link>
+            <Link to="/sciencemuseum/"></Link>
+            <Link to="/sciencemuseum/"></Link>
+            <Link to="/sciencemuseum/"></Link>
           </div>
         </header>
         <div className="content">
