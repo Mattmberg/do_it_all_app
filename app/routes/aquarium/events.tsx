@@ -12,7 +12,7 @@ export const links: LinksFunction = () => {
 export default function Index() {
   return (
     <div className="container">
-      <header>
+       <header>
         <div className="mainNav">
           <Link to="/">Home</Link>
           <Link to="/aquarium">Logo</Link>
@@ -22,13 +22,13 @@ export default function Index() {
             <button className="dropdownButton">Learn <FaCaretDown /></button>
             <div className="dropdownLinks">
               <Link to="/aquarium/learn">All Animals</Link>
-              <Link to="/aquarium/">Penguins</Link>
-              <Link to="/aquarium/">Sharks</Link>
-              <Link to="/aquarium/">Jellyfish</Link>
-              <Link to="/aquarium/">Sea Lions</Link>
-              <Link to="/aquarium/">Crabs</Link>
-              <Link to="/aquarium/">Turtles</Link>
-              <Link to="/aquarium/">Fish</Link>
+              <Link to="/aquarium/penguins">Penguins</Link>
+              <Link to="/aquarium/sharks">Sharks</Link>
+              <Link to="/aquarium/jellyfish">Jellyfish</Link>
+              <Link to="/aquarium/sealions">Sea Lions</Link>
+              <Link to="/aquarium/crabs">Crabs</Link>
+              <Link to="/aquarium/turtles">Turtles</Link>
+              <Link to="/aquarium/fish">Fish</Link>
             </div>
           </div>
           <Link to="/aquarium/conservation">Conservation Efforts</Link>

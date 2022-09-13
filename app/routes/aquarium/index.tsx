@@ -12,29 +12,29 @@ export const links: LinksFunction = () => {
 export default function Index() {
     return (
       <div className="container">
-        <header>
-          <div className="mainNav">
-            <Link to="/">Home</Link>
-            <Link to="/aquarium">Logo</Link>
-            <Link to="/aquarium/visit">Visit Us</Link>
-            <Link to="/aquarium/events">Event</Link>
-            <div className="dropdown">
-              <button className="dropdownButton">Learn <FaCaretDown /></button>
-              <div className="dropdownLinks">
-                <Link to="/aquarium/learn">All Animals</Link>
-                <Link to="/aquarium/">Penguins</Link>
-                <Link to="/aquarium/">Sharks</Link>
-                <Link to="/aquarium/">Jellyfish</Link>
-                <Link to="/aquarium/">Sea Lions</Link>
-                <Link to="/aquarium/">Crabs</Link>
-                <Link to="/aquarium/">Turtles</Link>
-                <Link to="/aquarium/">Fish</Link>
-              </div>
+      <header>
+        <div className="mainNav">
+          <Link to="/">Home</Link>
+          <Link to="/aquarium">Logo</Link>
+          <Link to="/aquarium/visit">Visit Us</Link>
+          <Link to="/aquarium/events">Event</Link>
+          <div className="dropdown">
+            <button className="dropdownButton">Learn <FaCaretDown /></button>
+            <div className="dropdownLinks">
+              <Link to="/aquarium/learn">All Animals</Link>
+              <Link to="/aquarium/penguins">Penguins</Link>
+              <Link to="/aquarium/sharks">Sharks</Link>
+              <Link to="/aquarium/jellyfish">Jellyfish</Link>
+              <Link to="/aquarium/sealions">Sea Lions</Link>
+              <Link to="/aquarium/crabs">Crabs</Link>
+              <Link to="/aquarium/turtles">Turtles</Link>
+              <Link to="/aquarium/fish">Fish</Link>
             </div>
-            <Link to="/aquarium/conservation">Conservation Efforts</Link>
-            <Link to="/aquarium/support">Support</Link>
           </div>
-        </header>
+          <Link to="/aquarium/conservation">Conservation Efforts</Link>
+          <Link to="/aquarium/support">Support</Link>
+        </div>
+      </header>
         <div className="content">
         </div>
         <footer>

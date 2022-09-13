@@ -23,17 +23,18 @@ input {
 
 .mainNav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #fff;
     font-family: Arial;
 }
 
 .mainNav a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: #00b359;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: 750;
 }
 
 footer {
@@ -49,6 +50,11 @@ footer {
 .dropdown {
     float: left;
     overflow: hidden;
+}
+
+.dropdownButton {
+    color: #00b359;
+    font-weight: 750;
 }
 
 .dropdown .dropdownButton {
