@@ -1,4 +1,4 @@
-body, html {
+body, html, .container, .content {
     margin: 0;
     background-size: cover;
     background-position: center;
@@ -54,15 +54,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.container {
-    height: 100% !important;
-    width: 100% !important;
-    box-sizing: border-box;
-    background-color: #0C2D48;
-    padding-bottom: 41px;
+    bottom: 0;
 }
 
 .content {
