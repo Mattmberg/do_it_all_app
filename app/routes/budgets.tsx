@@ -48,8 +48,6 @@ export default function Index() {
     return (
       <div className="container">
       <header>
-        <div>
-          <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -76,30 +74,24 @@ export default function Index() {
                   <Link to="/contact">Contact Me</Link>
                 </li>
             </ul>
-          </nav>
-        </div>
       </header>
         <div className="content">
           <h1>Budget Tracking</h1>
-          <div>
             <form onSubmit={onSubmit}>
                 <label htmlFor="net_income">What is your net income?</label><br/>
-                <input type="number" name="net_income" placeholder="Your Net Income" value={amount.net_income} onChange={handleChange} required/>{amount.net_income}<br/><br/>
+                <input type="number" name="net_income" placeholder="Your Net Income" value={amount.net_income} onChange={handleChange} required/><br/><br/>
                 <label htmlFor="entertainment_expense">How much do you spend on entertainment per month?</label><br/>
-                <input type="number" name="entertainment_expense" placeholder="Entertainment Expense" value={expense.entertainment_expense} onChange={handleChange} required/>{expense.entertainment_expense}<br/><br/>
+                <input type="number" name="entertainment_expense" placeholder="Entertainment Expense" value={expense.entertainment_expense} onChange={handleChange} required/><br/><br/>
                 <label htmlFor="utility_expense">How much do you spend on utilities per month?</label><br/>
-                <input type="number" name="utility_expense" placeholder="Utility Expense" value={expense.utility_expense} onChange={handleChange} required/>{expense.utility_expense}<br/><br/>
+                <input type="number" name="utility_expense" placeholder="Utility Expense" value={expense.utility_expense} onChange={handleChange} required/><br/><br/>
                 <label htmlFor="housing_expense">How much do you spend on housing per month?</label><br/>
-                <input type="number" name="housing_expense" placeholder="Housing Expense" value={expense.housing_expense} onChange={handleChange} required/>{expense.housing_expense}<br/><br/>
+                <input type="number" name="housing_expense" placeholder="Housing Expense" value={expense.housing_expense} onChange={handleChange} required/><br/><br/>
                 <label htmlFor="food_expense">How much do you spend on food per month?</label><br/>
-                <input type="number" name="food_expense" placeholder="Food Expense" value={expense.food_expense} onChange={handleChange} required/>{expense.food_expense}<br/><br/>
-                <button type="submit">Calculate Spending Amount</button>{amount.net_income}/{expenses}
+                <input type="number" name="food_expense" placeholder="Food Expense" value={expense.food_expense} onChange={handleChange} required/><br/><br/>
+                <button type="submit">Calculate Spending Amount</button>
             </form>
-            <div>
             <p>You will have ${sum.left_over_amount} dollars left to spend after your expenses.</p>
           </div>
-          </div>
-        </div>
         <footer>
           <p>&copy; Me</p>
       </footer>

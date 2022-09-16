@@ -32,6 +32,12 @@ import { send } from 'emailjs-com';
       )
       .then((response) => {
         console.log('Success!', response.status, response.text);
+        setToSend({
+          from_name: '',
+          to_name: 'Matthew Bergeron Jr.',
+          message: '',
+          reply_to: '',
+        })
       })
       .catch((err) => {
         console.log('Failed...', err);
