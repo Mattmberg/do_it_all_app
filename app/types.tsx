@@ -51,4 +51,9 @@ export interface Questions {
     id: number;
     question: string;
     validationType: string;
+    options?: string;
+}
+
+export interface QuestionsList {
+    list: string[];
 }

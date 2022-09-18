@@ -2,17 +2,16 @@ import type {
     LinksFunction,
 } from "@remix-run/cloudflare";
 import { Link, Form } from "@remix-run/react";
-import stylesUrl from "~/styles/onlinestore.css";
 import { useState, FormEvent, ChangeEvent } from "react";
-import { myQuestions } from "~/components/data";
-import { Questions } from "~/types";
+import stylesUrl from "~/styles/onlinestore.css";
+import { QuestionList } from "~/components/questionlist";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
 };
 
 export default function Index() {
-
+    
     const [answer, updateAnswer] = useState<string>("");
     const [answerList, updateAnswerList] = useState<string[]>([]);
     const [step, setStep] = useState<number>(1);
@@ -57,7 +56,8 @@ export default function Index() {
             <Link to="/event/merchandise">Merchandise</Link>
         </header>
         <div className="content">
-      <Title fontSize={48} label={title} />
+        <h1>Registration</h1>
+        <QuestionList />
       {answerList.length >= questionList.length && (
         <div>
           <Title fontSize={24} label={subTitle} />
@@ -96,5 +96,3 @@ export default function Index() {
       </div>
       );
   };
-
-
