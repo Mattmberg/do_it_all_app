@@ -57,3 +57,10 @@ export interface Questions {
 export interface QuestionsList {
     list: string[];
 }
+
+export interface BlogPost {
+    userId?: number;
+    id?: number;
+    title: string;
+    content: string;
+}

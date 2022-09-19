@@ -1,26 +1,42 @@
 import { LinksFunction, LoaderFunction, json } from "@remix-run/cloudflare";
-import { useLoaderData } from "@remix-run/react";
-import { getPosts } from "~/models/post";
-import { Link } from "@remix-run/react";
-
+import { useLoaderData, useParams, Link } from "@remix-run/react";
+const axios = require('axios');
 import stylesUrl from "~/styles/post.css";
 
 export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
 };
 
-type LoaderData = {
-  post: Awaited<ReturnType<typeof getPosts>>;
-};
-
-export const loader: LoaderFunction = async ({params,}) => {
-  return json<LoaderData>({
-    post: await getPosts(params.name),
+export let loader = async ({ params }) => {
+  let data = JSON.stringify({
+    collection: "posts",
+    database: "personal_website",
+    dataSource: process.env.CLUSTER_NAME,
+    filter: { title: params.title }
   });
+
+  let config = {
+    method: 'post',
+    url: process.env.DATA_API_BASE_URL + '/action/findOne',
+    headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Request-Headers': '*',
+        'api-key': process.env.DATA_API_KEY
+    },
+    data
+  };
+  
+  let result = await axios(config);
+  let post = result?.data?.document || {};
+
+  return {
+    title: params.title,
+    content: post.content
+  };
 };
 
 export default function PostSlug() {
-  const { post } = useLoaderData() as LoaderData;
+  const { post } = useLoaderData();
   return (
     <main className="mx-auto max-w-4xl">
             <header>

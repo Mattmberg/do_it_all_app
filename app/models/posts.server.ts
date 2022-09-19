@@ -1,32 +1,26 @@
-export async function getPosts() {
-    const res = await fetch(
-        'https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0'
-    ).then((res) => res.json());
-  
-    return res.results;
+import { BlogPost } from "~/types";
+import axios, { AxiosResponse } from "axios";
+
+const instance = axios.create({
+	baseURL: process.env.DATABASE_URL,
+	timeout: 15000,
+});
+
+const responseBody = (response: AxiosResponse) => response.data;
+
+const requests = {
+	get: (url: string) => instance.get(url).then(responseBody),
+	post: (url: string, body: {}) => instance.post(url, body).then(responseBody),
+	put: (url: string, body: {}) => instance.put(url, body).then(responseBody),
+	delete: (url: string) => instance.delete(url).then(responseBody),
 };
-  
-export async function getPost(title: string | undefined) {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`).then(
-      (res) => res.json()
-    );
-  
-    return res;
+
+export const Post = {
+	getPosts: (): Promise<BlogPost[]> => requests.get('posts'),
+	getAPost: (id: number): Promise<BlogPost> => requests.get(`posts/${id}`),
+	createPost: (post: BlogPost): Promise<BlogPost> =>
+		requests.post('posts', post),
+	updatePost: (post: BlogPost, id: number): Promise<BlogPost> =>
+		requests.put(`posts/${id}`, post),
+	deletePost: (id: number): Promise<void> => requests.delete(`posts/${id}`),
 };
-
-exports.createPost(req, res, next) => {
-    const title = req.body.title;
-    const content = req.body.content;
-
-    const post = new Post({
-        title: title,
-        content: content
-    });
-
-    post.save().then(postSaved => {
-        res.status(201).json({message: 'Post Created successfully!',
-        post: postSaved
-        });
-    })
-    .catch(err => console.log('err', err));
-}
