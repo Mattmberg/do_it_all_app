@@ -1,4 +1,10 @@
-import mongoose from "mongoose";
+import { Document, model, Schema } from "mongoose";
+
+export interface ITodo {
+    name: string;
+    description: string;
+    status: boolean;
+}
 
 export const TodoSchema = new Schema({
     name: {
@@ -17,4 +23,4 @@ export const TodoSchema = new Schema({
     { timestamps: true }
 );
 
-export default model Todo <>("Todo", TodoSchema);
+export default model<ITodo>("Todo", TodoSchema);

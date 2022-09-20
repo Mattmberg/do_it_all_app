@@ -7,7 +7,7 @@ export const links: LinksFunction = () => {
     return [{ rel: "stylesheet", href: stylesUrl, }];
 };
 
-type LoaderData = {
+/*type LoaderData = {
     data: Awaited<ReturnType<typeof getCountPosts>>;
 };
   
@@ -15,7 +15,7 @@ export const loader = async () => {
     return json<LoaderData>({
       data: await getCountPosts(),
     });
-};
+};  */
 
 /*export let loader = async ({ request }) => {
     let url = new URL(request.url);
@@ -111,8 +111,6 @@ export default function Index() {
     let [searchParams, setSearchParams] = useSearchParams();
     let submit = useSubmit();
     let posts = useLoaderData();
-    let totalFound = posts.totalCount;
-    let totalPosts = posts.showCount;
 
     return (
       <div className="container">
@@ -129,20 +127,6 @@ export default function Index() {
         </header>
         <div className="content">
             <h1>My Blog</h1>
-
-            <Form method="get">
-                <input onChange={e => submit(e.currentTarget.form)} 
-                id="" name="" placeholder="Search blog posts..."
-                />
-                <p>Showing { totalPosts } of { totalFound } blog posts found.</p>
-            </Form>
-            <ul>
-                {posts.documents.map(post => (
-                    <li key={post.title}>
-                        <Link to={post.title}>{post.title}</Link>
-                    </li>
-                ))}
-            </ul>
         </div>
         <footer>
             <div className="footerLinks">

@@ -16,10 +16,6 @@ export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl, }];
 };
 
-export const express = require('express');
-
-export const mongoose = require('mongoose');
-
 // https://remix.run/api/conventions#default-export
 // https://remix.run/api/conventions#route-filenames
 export default function App() {
