@@ -1,3 +1,6 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -14,12 +17,12 @@ model User {
   passwordHash String
   email String? @unique
   username String @unique
+  posts      Post[]
   recipes    Recipe[]
   habits       Habit[]
   budgets      Budget[]
   favorites Favorite[]
 }
-
 model Recipe {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   userId     String
@@ -29,7 +32,6 @@ model Recipe {
   name       String
   content    String
 }
-
 model Habit {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   userId     String
@@ -39,7 +41,6 @@ model Habit {
   name      String
   content   String
 }
-
 model Budget {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   userId     String
@@ -52,7 +53,6 @@ model Budget {
   expense   Int
   total     Int
 }
-
 model Favorite {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   userId     String
@@ -61,4 +61,14 @@ model Favorite {
   updatedAt DateTime @updatedAt
   favoritePokemon String
   favoriteType String
+}
+
+model Post {
+  id        String @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  name      String
+  content   String
 }
