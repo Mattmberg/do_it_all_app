@@ -1,40 +1,64 @@
-import { LinksFunction, LoaderFunction, json } from "@remix-run/cloudflare";
-import { useLoaderData, useParams, Link } from "@remix-run/react";
-const axios = require('axios');
-import stylesUrl from "~/styles/post.css";
+import type { LoaderFunction } from "@remix-run/cloudflare";
+import { json } from "@remix-run/cloudflare";
+import {
+  Link,
+  useLoaderData,
+  useCatch,
+  useParams,
+} from "@remix-run/react";
+import type { Post } from "@prisma/client";
 
-export const links: LinksFunction = () => {
-    return [{ rel: "stylesheet", href: stylesUrl, }];
-};
+import { db } from "~/utils/db.server";
 
-export let loader = async ({ params }) => {
-  let data = JSON.stringify({
-    collection: "posts",
-    database: "personal_website",
-    dataSource: process.env.CLUSTER_NAME,
-    filter: { title: params.title }
+type LoaderData = { post: Post };
+
+export const loader: LoaderFunction = async ({
+  params,
+}) => {
+  const post = await db.post.findUnique({
+    where: { id: params.postId },
   });
-
-  let config = {
-    method: 'post',
-    url: process.env.DATA_API_BASE_URL + '/action/findOne',
-    headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Request-Headers': '*',
-        'api-key': process.env.DATA_API_KEY
-    },
-    data
-  };
-  
-  let result = await axios(config);
-  let post = result?.data?.document || {};
-
-  return {
-    title: params.title,
-    content: post.content
-  };
+  if (!post) {
+    throw new Response("What a post! Not found.", {
+      status: 404,
+    });
+  }
+  const data: LoaderData = { post };
+  return json(data);
 };
 
+export default function PostRoute() {
+  const data = useLoaderData<LoaderData>();
+
+  return (
+    <div>
+      <p>Here's your hilarious post:</p>
+      <p>{data.post.content}</p>
+      <Link to=".">{data.post.name} Permalink</Link>
+    </div>
+  );
+}
+
+export function CatchBoundary() {
+  const caught = useCatch();
+  const params = useParams();
+  if (caught.status === 404) {
+    return (
+      <div className="error-container">
+        Huh? What the heck is "{params.postId}"?
+      </div>
+    );
+  }
+  throw new Error(`Unhandled error: ${caught.status}`);
+}
+
+export function ErrorBoundary() {
+  const { postId } = useParams();
+  return (
+    <div className="error-container">{`There was an error loading post by the id ${postId}. Sorry.`}</div>
+  );
+}
+/*
 export default function PostSlug() {
   const { post } = useLoaderData();
   return (
@@ -88,3 +112,4 @@ export default function PostSlug() {
     </main>
   );
 }
+*/
